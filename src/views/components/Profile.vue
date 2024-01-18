@@ -2,7 +2,7 @@
   <article class="w-full flex flex-col items-start gap-3">
     <img :src="pfp" class="h-32 rounded-[200px]" />
     <h1 class="text-white text-2xl leading-none">seven rings</h1>
-    <span class="text-detail leading-none">@haruueel</span>
+    <span class="text-detail leading-none">@sevenrings</span>
 
     <div class="flex gap-2 flex-wrap">
       <Tag v-for="el in tags" :name="el"></Tag>
@@ -15,7 +15,7 @@
       <a href="https://github.com/haruueel" target="_blank">
         <Github class="icon" />
       </a>
-      <a href="https://www.linkedin.com/in/haruueel/" target="_blank">
+      <a href="https://www.linkedin.com/in/sevenrings/" target="_blank">
         <Linkedin class="icon hover:!fill-blue-500" />
       </a>
       <Popper
@@ -35,7 +35,7 @@
       </div>
       <div class="flex gap-2 items-center">
         <Projects class="fill-detail w-5" />
-        <span class="leading-none font-poppins text-sm">+6 projects</span>
+        <span class="leading-none font-poppins text-sm">+7 projects</span>
       </div>
     </footer>
   </article>
@@ -61,5 +61,5 @@ const tags = [
 const about =
   "I am an appliaction multiplatform fullstack developer driven by an unwavering ambition of becoming an excellent programmer.";
 const pfp =
-  "https://cdn.discordapp.com/attachments/967185420100194314/1182247238097960970/9df91141f3ba014c66e5306c0e0db9c1.png?ex=6584008a&is=65718b8a&hm=886c3170e84d3090a930da3691c87f7c3566b6418df1c0f8c5e274577e3cb95d&";
+  "https://cdn.discordapp.com/attachments/324927709233020929/1197472923338936370/haruchan.jpg?ex=65bb6490&is=65a8ef90&hm=1958243094e1b6161100b9980447a03f8568e3ac93503be0aac71525c09e3d8a&";
 </script>

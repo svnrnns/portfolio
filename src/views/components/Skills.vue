@@ -41,7 +41,7 @@ const skillList = [
   },
   {
     name: "Tailwindcss",
-    rate: 90,
+    rate: 95,
   },
   {
     name: "Java",
