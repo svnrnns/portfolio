@@ -2,7 +2,7 @@
   <article class="w-full flex flex-col items-start gap-3">
     <img :src="pfp" class="h-32 rounded-[200px]" />
     <h1 class="text-white text-2xl leading-none">seven rings</h1>
-    <span class="text-detail leading-none">@sevenrings</span>
+    <span class="text-detail leading-none">@svnrnns</span>
 
     <div class="flex gap-2 flex-wrap">
       <Tag v-for="el in tags" :name="el"></Tag>
@@ -12,10 +12,10 @@
       <p class="text-font">{{ about }}</p>
     </div>
     <div class="flex gap-4">
-      <a href="https://github.com/haruueel" target="_blank">
+      <a href="https://github.com/svnrnns" target="_blank">
         <Github class="icon" />
       </a>
-      <a href="https://www.linkedin.com/in/sevenrings/" target="_blank">
+      <a href="https://www.linkedin.com/in/svnrnns/" target="_blank">
         <Linkedin class="icon hover:!fill-blue-500" />
       </a>
       <Popper
