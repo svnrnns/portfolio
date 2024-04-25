@@ -1,18 +1,6 @@
 * {
-  @apply font-euclid;
+  @apply font-albert;
   scroll-behavior: smooth;
-}
-
-:root {
-  --popper-theme-background-color: #121212;
-  --popper-theme-background-color-hover: #333333;
-  --popper-theme-text-color: #ffffff;
-  --popper-theme-border-width: 1px;
-  --popper-theme-border-style: solid;
-  --popper-theme-border-color: #8798a01a;
-  --popper-theme-border-radius: 8px;
-  --popper-theme-padding: 8px;
-  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
 }
 
 html,
@@ -29,6 +17,10 @@ body #app {
   @apply bg-font/50 rounded;
 }
 
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
 .icon {
   @apply fill-font hover:fill-white transition-all duration-300 hover:scale-105 hover:cursor-pointer;
 }
@@ -43,4 +35,8 @@ body #app {
 
 .post {
   @apply bg-post border-boxborder border p-2 rounded-lg shadow;
+}
+
+.paused {
+  animation-play-state: paused;
 }

@@ -8,4 +8,8 @@ const app = createApp(App);
 import Popper from "vue3-popper";
 app.component("Popper", Popper);
 
+// Vue Router
+import router from "./router/routes";
+app.use(router);
+
 app.mount("#app");

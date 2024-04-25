@@ -3,9 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      euclid: ["Euclid Flex", "sans-serif"],
-      nunito: ["Nunito", "sans-serif"],
-      poppins: ["Poppins", "sans-serif"],
+      albert: ["Albert Sans", "sans-serif"],
     },
     extend: {
       colors: {
@@ -15,14 +13,20 @@ export default {
         signature: "#665d78",
 
         post: "#202020",
-        body: "#121212",
-        module: "#1c1c1c",
+        body: "#fff",
+        module: "#d9e9ff",
         box: "#242424",
         piece: "#666666",
-        font: "#cacaca",
+        font: "#949494",
         detail: "#5f5f5e",
         boxborder: "#66777E1A",
         geo: "#ffe787",
+      },
+      fontSize: {
+        sm: ["14px", { lineHeight: "21px" }],
+        base: ["16px", { lineHeight: "24px" }],
+        lg: ["18px", { lineHeight: "27px" }],
+        "4xl": ["36px", { lineHeight: "43px" }],
       },
     },
   },
