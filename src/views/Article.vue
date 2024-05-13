@@ -3,7 +3,7 @@
     <PageWrapper
       :title="article.title"
       :detail="article.detail"
-      :to="'/experience'"
+      to="/experience"
       :banner="article.img"
       v-if="article"
     >
@@ -21,7 +21,7 @@
 <script setup>
 import PageWrapper from "../components/PageWrapper.vue";
 import { useRoute } from "vue-router";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const route = useRoute();
 const article = ref(null);
@@ -29,6 +29,7 @@ const article = ref(null);
 import("/src/api/articles/" + route.params.id + ".js")
   .then((module) => {
     article.value = module.default;
+    document.title = "seven rings - " + module.default.title;
   })
   .catch((err) => {
     console.error("Error loading module:", err);

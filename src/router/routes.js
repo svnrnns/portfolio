@@ -4,6 +4,11 @@ import { nextTick } from "vue";
 // Routes
 const routes = [
   {
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: () => import("../views/404.vue"),
+  },
+  {
     path: "/",
     name: "Home",
     component: () => import("../views/Home.vue"),
@@ -25,17 +30,11 @@ const router = createRouter({
   history: createWebHistory(),
 });
 
-// router.beforeEach(async (to, from) => {
-//   let name =
-//     to.name == "Landing"
-//       ? "Custom Marketing Name Waiting Room"
-//       : to.name.replace("Starrail", "") + " | Stellaris";
-//   if (to.name == "StarrailCharacter") {
-//     name = "Best build for " + characterList[0] + " | Stellaris";
-//   }
-//   nextTick(() => {
-//     document.title = name;
-//   });
-// });
+router.beforeEach(async (to, from) => {
+  const name = "seven rings - " + to.name;
+  nextTick(() => {
+    document.title = name;
+  });
+});
 
 export default router;

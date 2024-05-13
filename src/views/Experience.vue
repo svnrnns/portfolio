@@ -1,9 +1,9 @@
 <template>
   <div class="screen-setup overflow-hidden items-center">
     <PageWrapper
-      :title="'Enterprise Experience'"
-      :detail="'List of most relevant projects I have been part of.'"
-      :to="'/'"
+      title="Enterprise Experience"
+      detail="List of most relevant projects I have been part of."
+      to="/"
     >
       <div class="w-full flex flex-col divide-y divide-font/30 mt-6 px-1.5">
         <router-link
