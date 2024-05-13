@@ -1,8 +1,14 @@
-# ⚡ Project Set-up
+# Project Setup 🌸
 
-Clone this repo and install all dependencies with `npm install` or `yarn` .
+1. Clone this GitHub repository.
+2. Access the directory with `cd stellaris-3`.
+3. Install all dependencies using `npm install` or `yarn`.
+4. Run this project in dev mode `npm run dev`.
 
-Run this project in dev mode `npm run dev` or build for production `npm run build`
+## .env
 
-> [!NOTE]
-> See this project live at **not yet deployed**.
+Emtpy for now.
+
+## See
+
+Project not yet deployed.
