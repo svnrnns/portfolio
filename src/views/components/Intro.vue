@@ -1,0 +1,41 @@
+<template>
+  <div class="flex flex-col gap-6">
+    <!-- Top -->
+    <span class="text-lg font-medium text-heading slide-in-delay"
+      >seven rings</span
+    >
+    <span class="-mt-3 text-detail slide-in-delay" style="--delay: 2"
+      >Miguel Montesinos</span
+    >
+    <span class="slide-in-delay" style="--delay: 3">
+      Software Engineer specializing in the development of multi-platform
+      full-stack applications. <br />
+      Guru at cooking up high-quality products with the best user experience in
+      mind.</span
+    >
+    <ul class="flex items-center gap-3 slide-in-delay" style="--delay: 4">
+      <li>
+        <a>CV</a>
+      </li>
+      <li>
+        <a>Experience</a>
+      </li>
+      <li>
+        <a>Side-Projects</a>
+      </li>
+      <li>
+        <a>Docs</a>
+      </li>
+    </ul>
+    <div
+      class="w-full h-px bg-detail/30 slide-in-delay my-6"
+      style="--delay: 5"
+    ></div>
+  </div>
+</template>
+
+<style scoped>
+a {
+  @apply text-heading hover:underline cursor-pointer;
+}
+</style>

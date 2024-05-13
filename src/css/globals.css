@@ -25,18 +25,14 @@ body #app {
   @apply fill-font hover:fill-white transition-all duration-300 hover:scale-105 hover:cursor-pointer;
 }
 
-.module {
-  @apply bg-module border-boxborder border p-4 rounded-lg shadow;
+.page {
+  @apply max-w-[768px];
 }
 
-.box {
-  @apply bg-box border-boxborder border p-2 rounded-lg shadow;
+.transition {
+  @apply transition-all duration-300;
 }
 
-.post {
-  @apply bg-post border-boxborder border p-2 rounded-lg shadow;
-}
-
-.paused {
-  animation-play-state: paused;
+.screen-setup {
+  @apply h-screen w-screen fixed overflow-hidden;
 }

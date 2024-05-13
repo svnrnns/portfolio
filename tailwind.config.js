@@ -7,20 +7,13 @@ export default {
     },
     extend: {
       colors: {
-        darkness: "#131019",
-        primary: "#fa1e4e",
-        section: "#1c1726",
-        signature: "#665d78",
-
-        post: "#202020",
-        body: "#fff",
-        module: "#d9e9ff",
-        box: "#242424",
-        piece: "#666666",
-        font: "#949494",
-        detail: "#5f5f5e",
-        boxborder: "#66777E1A",
-        geo: "#ffe787",
+        border: "#474747",
+        body: "#111111",
+        module: "#333333",
+        box: "#444444",
+        font: "#a5a5a5",
+        detail: "#6b6b6b",
+        heading: "#fff",
       },
       fontSize: {
         sm: ["14px", { lineHeight: "21px" }],

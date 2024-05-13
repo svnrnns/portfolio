@@ -8,6 +8,11 @@ const routes = [
     name: "Root",
     component: () => import("../views/Portfolio.vue"),
   },
+  {
+    path: "/home",
+    name: "Home",
+    component: () => import("../views/Home.vue"),
+  },
 ];
 
 const router = createRouter({
@@ -15,17 +20,17 @@ const router = createRouter({
   history: createWebHistory(),
 });
 
-router.beforeEach(async (to, from) => {
-  let name =
-    to.name == "Landing"
-      ? "Custom Marketing Name Waiting Room"
-      : to.name.replace("Starrail", "") + " | Stellaris";
-  if (to.name == "StarrailCharacter") {
-    name = "Best build for " + characterList[0] + " | Stellaris";
-  }
-  nextTick(() => {
-    document.title = name;
-  });
-});
+// router.beforeEach(async (to, from) => {
+//   let name =
+//     to.name == "Landing"
+//       ? "Custom Marketing Name Waiting Room"
+//       : to.name.replace("Starrail", "") + " | Stellaris";
+//   if (to.name == "StarrailCharacter") {
+//     name = "Best build for " + characterList[0] + " | Stellaris";
+//   }
+//   nextTick(() => {
+//     document.title = name;
+//   });
+// });
 
 export default router;

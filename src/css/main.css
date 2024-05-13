@@ -5,5 +5,4 @@
 @import "tailwindcss/utilities";
 
 @import "./globals.css";
-
-@import url("https://fonts.cdnfonts.com/css/euclid-flex");
+@import "./animations.css";
