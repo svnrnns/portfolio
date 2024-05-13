@@ -11,10 +11,14 @@ export default [
     name: "Baleria Control Tower",
     article: baleariaArticle,
     icon: ZeusIcon,
+    company: "Zeus - Smart Visual Data",
+    year: 2023,
   },
   {
     name: "Ucersa Dashboard",
     icon: ZeusIcon,
     article: ucersaArticle,
+    company: "Zeus - Smart Visual Data",
+    year: 2023,
   },
 ];

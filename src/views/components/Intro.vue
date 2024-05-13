@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-6">
-    <!-- Top -->
     <span class="text-lg font-medium text-heading slide-in-delay"
       >seven rings</span
     >
@@ -18,7 +17,7 @@
         <a>CV</a>
       </li>
       <li>
-        <a>Experience</a>
+        <router-link to="/experience">Experience</router-link>
       </li>
       <li>
         <a>Side-Projects</a>

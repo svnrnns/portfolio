@@ -13,6 +13,11 @@ const routes = [
     name: "Home",
     component: () => import("../views/Home.vue"),
   },
+  {
+    path: "/experience",
+    name: "Experience",
+    component: () => import("../views/Experience.vue"),
+  },
 ];
 
 const router = createRouter({
