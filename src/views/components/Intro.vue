@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col gap-6">
     <span class="text-lg font-medium text-heading slide-in-delay"
-      >seven rings</span
-    >
+      >seven rings <span class="text-detail/30 font-normal">.com</span>
+    </span>
     <span class="-mt-3 text-detail slide-in-delay" style="--delay: 2"
       >Miguel Montesinos</span
     >

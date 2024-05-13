@@ -17,18 +17,10 @@
         </div>
       </div>
     </PageWrapper>
-    <!-- <router-link
-        to="/"
-        class="flex items-center justify-start gap-1.5 mt-6 transition hover:underline cursor-pointer"
-      >
-        <ArrowUpRightIcon class="h-3 fill-heading" />
-        <span class="text-heading text-sm">Back</span>
-      </router-link> -->
   </div>
 </template>
 
 <script setup>
-import PageWrapper from "../components/iconics/PageWrapper.vue";
-import ArrowUpRightIcon from "/src/components/iconics/ArrowUpLeftIcon.vue";
+import PageWrapper from "../components/PageWrapper.vue";
 import projects from "/src/api/projects.js";
 </script>

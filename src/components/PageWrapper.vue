@@ -6,7 +6,7 @@
       <slot />
       <router-link
         to="/"
-        class="flex items-center justify-start gap-1.5 mt-6 transition hover:underline cursor-pointer"
+        class="flex items-center justify-start gap-1.5 mt-6 transition hover:underline cursor-pointer hover:-translate-x-2"
       >
         <ArrowUpRightIcon class="h-3 fill-heading" />
         <span class="text-heading text-sm">Back</span>
