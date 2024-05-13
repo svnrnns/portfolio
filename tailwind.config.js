@@ -7,9 +7,9 @@ export default {
     },
     extend: {
       colors: {
-        border: "#474747",
+        border: "#222222",
         body: "#111111",
-        module: "#333333",
+        module: "#161616",
         box: "#444444",
         font: "#a5a5a5",
         detail: "#6b6b6b",
