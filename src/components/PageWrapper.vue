@@ -1,6 +1,10 @@
 <template>
-  <div class="screen-setup overflow-hidden flex flex-col items-center">
-    <div class="flex flex-col gap-3 pt-32 w-full page">
+  <div
+    class="screen-setup flex flex-col items-center !overflow-auto sm:!overflow-hidden"
+  >
+    <div
+      class="flex flex-col gap-3 px-[7.5%] py-[10%] sm:px-0 sm:pb-0 sm:pt-32 w-full page"
+    >
       <div
         class="h-32 banner flex-center overflow-hidden rounded-xl mb-3"
         v-if="banner"

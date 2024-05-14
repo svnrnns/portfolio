@@ -1,6 +1,8 @@
 <template>
-  <div class="screen-setup overflow-hidden flex flex-col items-center">
-    <Intro class="w-full page pt-32" />
+  <div
+    class="screen-setup flex flex-col items-center px-[7.5%] py-[10%] !overflow-auto sm:!overflow-hidden sm:px-0 sm:py-0"
+  >
+    <Intro class="w-full page sm:pt-32" />
     <ActiveJob class="w-full page mt-6" />
     <Connect class="w-full page mt-3" />
   </div>

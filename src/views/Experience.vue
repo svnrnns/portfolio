@@ -11,7 +11,9 @@
           class="flex items-center justify-between py-3 cursor-pointer"
           v-for="project in projects"
         >
-          <div class="flex items-center gap-3">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-3"
+          >
             <span class="text-heading hover:underline">{{ project.name }}</span>
             <span class="text-sm">{{ project.company }}</span>
           </div>
