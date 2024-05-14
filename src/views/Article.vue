@@ -26,7 +26,7 @@ import { onMounted, ref } from "vue";
 const route = useRoute();
 const article = ref(null);
 
-import("/src/api/articles/" + route.params.id + ".js")
+import("../api/articles/" + route.params.id + ".js")
   .then((module) => {
     article.value = module.default;
     document.title = "seven rings - " + module.default.title;
