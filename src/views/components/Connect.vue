@@ -7,13 +7,15 @@
     >
     <ul class="flex items-center gap-3 slide-in-delay" style="--delay: 10">
       <li>
-        <a>@svnrnns</a>
+        <a href="https://twitter.com/svnrnns" target="_blank">@svnrnns</a>
       </li>
       <li>
-        <a> Mail </a>
+        <a href="mailto:haruueel@gmail.com"> Mail </a>
       </li>
       <li>
-        <a>Linkedin</a>
+        <a href="https://www.linkedin.com/in/svnrnns/" target="_blank"
+          >Linkedin</a
+        >
       </li>
     </ul>
   </div>
