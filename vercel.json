@@ -1,0 +1,4 @@
+{
+  "version": 2,
+  "routes": [{ "src": "/api/article", "dest": "/api/supabase-api.cjs" }]
+}
