@@ -1,6 +1,6 @@
 <template>
   <div class="screen-setup overflow-hidden flex-center">
-    <span v-if="articleLoading">Loading...</span>
+    <Loading v-if="articleLoading" />
     <PageWrapper
       :title="article.title"
       :detail="article.detail"
@@ -20,6 +20,7 @@
 </template>
 
 <script setup>
+import Loading from "../components/Loading.vue";
 import PageWrapper from "../components/PageWrapper.vue";
 import { useRoute } from "vue-router";
 import { computed } from "vue";
