@@ -1,7 +1,7 @@
 import { ref, computed } from "vue";
 import { createClient } from "@supabase/supabase-js";
 
-const isProd = import.meta.env.VITE_APP_IS_PROD;
+const isProd = import.meta.env.VITE_APP_IS_PROD === "true";
 let supabase = null;
 
 function createIfNotExistsSupabaseClient() {
@@ -37,10 +37,12 @@ export function getArticle(code) {
   const error = ref(null);
   const loading = ref(true);
 
-  if (isProd) {
-    fetch("/api/getArticle?code=" + code).then((serverResponse) => {
-      response.value = serverResponse.json().response[0];
-      error.value = serverResponse.json().error;
+  if (isProd == true) {
+    fetch("/api/article?code=" + code).then((serverResponse) => {
+      serverResponse.json().then((processedData) => {
+        response.value = processedData.response[0];
+        error.value = processedData.error;
+      });
     });
   } else {
     createIfNotExistsSupabaseClient();

@@ -30,8 +30,15 @@ async function apiGetArticle(req, res) {
 }
 
 module.exports = async (req, res) => {
-  const { pathname, query } = new URL(req.url, `http://${req.headers.host}`);
+  console.log(req, res);
+  const { pathname, searchParams } = new URL(
+    req.url,
+    `http://${req.headers.host}`
+  );
+  const query = Object.fromEntries(searchParams.entries());
 
-  if (pathname == "/api/getArticle" && query.code)
+  if (pathname == "/api/article" && query.code) {
+    req.query = query;
     return apiGetArticle(req, res);
+  }
 };

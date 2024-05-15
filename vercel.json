@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/getArticle", "dest": "/api/supabase-api.js" }]
+  "builds": [{ "src": "api/**/*.cjs", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/article", "dest": "/api/supabase-api.cjs" }]
 }
