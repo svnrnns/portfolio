@@ -1,10 +1,11 @@
 <template>
   <div class="screen-setup overflow-hidden flex-center">
+    <span v-if="articleLoading">Loading...</span>
     <PageWrapper
       :title="article.title"
       :detail="article.detail"
       to="/experience"
-      :banner="article.img"
+      :banner="'/' + article.img"
       v-if="article"
     >
       <div class="w-full flex flex-col gap-3 mt-6">
@@ -22,16 +23,26 @@
 import PageWrapper from "../components/PageWrapper.vue";
 import { useRoute } from "vue-router";
 import { onMounted, ref } from "vue";
+import { supabase } from "/src/api/supabase-client.js";
 
-const route = useRoute();
 const article = ref(null);
+const articleLoading = ref(true);
+const route = useRoute();
 
-import("../api/articles/" + route.params.id + ".js")
-  .then((module) => {
-    article.value = module.default;
-    document.title = "seven rings - " + module.default.title;
-  })
-  .catch((err) => {
-    console.error("Error loading module:", err);
-  });
+async function getArticles() {
+  const { data, error } = await supabase
+    .from("articles")
+    .select("*")
+    .eq("code", route.params.id);
+  if (error) {
+    // Add error handling (in the future)
+  } else {
+    article.value = data[0];
+    articleLoading.value = false;
+  }
+}
+
+onMounted(() => {
+  getArticles();
+});
 </script>
