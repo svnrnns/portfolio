@@ -1,6 +1,0 @@
-{
-  "version": 2,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
-  "builds": [{ "src": "api/**/*.cjs", "use": "@vercel/node" }],
-  "routes": [{ "src": "/api/article", "dest": "/api/supabase-api.cjs" }]
-}
