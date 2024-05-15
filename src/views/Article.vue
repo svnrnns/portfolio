@@ -22,27 +22,16 @@
 <script setup>
 import PageWrapper from "../components/PageWrapper.vue";
 import { useRoute } from "vue-router";
-import { onMounted, ref } from "vue";
-import { supabase } from "/src/api/supabase-client.js";
+import { computed } from "vue";
+import { getArticle } from "/src/api/supabase-api.js";
 
-const article = ref(null);
-const articleLoading = ref(true);
 const route = useRoute();
 
-async function getArticles() {
-  const { data, error } = await supabase
-    .from("articles")
-    .select("*")
-    .eq("code", route.params.id);
-  if (error) {
-    // Add error handling (in the future)
-  } else {
-    article.value = data[0];
-    articleLoading.value = false;
-  }
-}
-
-onMounted(() => {
-  getArticles();
+const articleResponse = getArticle(route.params.id);
+const article = computed(() => {
+  return articleResponse?.value?.response;
+});
+const articleLoading = computed(() => {
+  return articleResponse?.value?.loading;
 });
 </script>
