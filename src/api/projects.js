@@ -2,7 +2,7 @@ export default [
   {
     name: "ICEX Map (Project Sprint)",
     article: "icex-map-article",
-    company: "Zeus- Smart Visual Data",
+    company: "Zeus - Smart Visual Data",
     year: 2024,
   },
   {
