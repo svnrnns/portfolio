@@ -34,5 +34,5 @@ body #app {
 }
 
 .screen-setup {
-  @apply h-screen w-screen fixed overflow-hidden;
+  @apply h-screen w-screen fixed overflow-x-hidden !overflow-y-auto;
 }

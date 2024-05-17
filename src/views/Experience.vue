@@ -1,5 +1,5 @@
 <template>
-  <div class="screen-setup overflow-hidden items-center">
+  <div class="screen-setup items-center">
     <PageWrapper
       title="Enterprise Experience"
       detail="List of most relevant projects I have been part of."

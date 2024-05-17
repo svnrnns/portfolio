@@ -1,5 +1,5 @@
 <template>
-  <div class="screen-setup overflow-hidden flex-center">
+  <div class="screen-setup flex-center">
     <Loading v-if="articleLoading" />
     <PageWrapper
       :title="article.title"
