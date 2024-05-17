@@ -5,26 +5,22 @@
       detail="List of most relevant projects I have been part of."
       to="/"
     >
-      <div class="w-full flex flex-col divide-y divide-font/30 mt-6 px-1.5">
-        <router-link
-          :to="'/article/' + project.article"
-          class="flex items-center justify-between py-3 cursor-pointer"
-          v-for="project in projects"
-        >
-          <div
-            class="flex flex-col sm:flex-row items-start sm:items-center gap-3"
-          >
-            <span class="text-heading hover:underline">{{ project.name }}</span>
-            <span class="text-sm">{{ project.company }}</span>
-          </div>
-          <span class="text-sm">{{ project.year }}</span>
-        </router-link>
-      </div>
+      <List
+        class="w-full mt-6 px-1.5"
+        to="/article/"
+        param="article"
+        name="name"
+        detail="company"
+        date="year"
+        :data="projects"
+      >
+      </List>
     </PageWrapper>
   </div>
 </template>
 
 <script setup>
-import PageWrapper from "../components/PageWrapper.vue";
+import List from "/src/components/List.vue";
+import PageWrapper from "/src/components/PageWrapper.vue";
 import projects from "/src/api/projects.js";
 </script>

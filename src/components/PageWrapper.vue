@@ -4,15 +4,16 @@
       class="flex flex-col gap-3 px-[7.5%] py-[10%] sm:px-0 sm:pt-32 sm:pb-32 w-full page"
     >
       <div
-        class="h-32 banner flex-center overflow-hidden rounded-xl mb-3"
+        class="h-32 banner flex-center overflow-hidden rounded-xl mb-3 div-pulse"
         v-if="banner"
       >
         <img
+          id="banner"
           :src="banner"
           alt="article-banner"
           loading="lazy"
           draggable="false"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover opacity-0"
         />
       </div>
 
@@ -32,6 +33,17 @@
 
 <script setup>
 import ArrowUpRightIcon from "/src/components/iconics/ArrowUpLeftIcon.vue";
+import { onMounted } from "vue";
 
-defineProps(["title", "detail", "to", "banner"]);
+const props = defineProps(["title", "detail", "to", "banner"]);
+
+onMounted(() => {
+  if (props.banner != null) {
+    const banner = document.getElementById("banner");
+
+    banner.onload = () => {
+      banner.classList.remove("opacity-0");
+    };
+  }
+});
 </script>
