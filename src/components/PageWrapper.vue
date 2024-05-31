@@ -4,7 +4,18 @@
       class="flex flex-col gap-3 px-[7.5%] py-[10%] sm:px-0 sm:pt-32 sm:pb-32 w-full page"
     >
       <div
-        class="h-32 banner flex-center overflow-hidden rounded-xl mb-3 div-pulse"
+        class="flex items-start sm:items-center gap-2 pb-3"
+        v-if="disclaimer"
+      >
+        <CircleInfoIcon
+          class="h-3 w-3 mt-1 sm:mt-0 aspect-square fill-amber-200"
+        />
+        <span class="text-amber-200 text-xs sm:text-sm flex-1">{{
+          disclaimer
+        }}</span>
+      </div>
+      <div
+        class="h-32 sm:h-64 banner flex-center overflow-hidden rounded-xl mb-3 div-pulse"
         v-if="banner"
       >
         <img
@@ -32,10 +43,11 @@
 </template>
 
 <script setup>
+import CircleInfoIcon from "./iconics/CircleInfoIcon.vue";
 import ArrowUpRightIcon from "/src/components/iconics/ArrowUpLeftIcon.vue";
 import { onMounted } from "vue";
 
-const props = defineProps(["title", "detail", "to", "banner"]);
+const props = defineProps(["title", "detail", "to", "banner", "disclaimer"]);
 
 onMounted(() => {
   if (props.banner != null) {

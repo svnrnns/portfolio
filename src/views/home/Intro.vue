@@ -9,8 +9,7 @@
     <span class="slide-in-delay" style="--delay: 3">
       Software Engineer specializing in the development of multi-platform
       full-stack applications. <br />
-      Guru at cooking up high-quality products with the best user experience in
-      mind.</span
+      Delivering god-tier products with the best user experience in mind.</span
     >
     <ul class="flex items-center gap-3 slide-in-delay" style="--delay: 4">
       <li>

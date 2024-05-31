@@ -4,8 +4,8 @@
     <PageWrapper
       :title="article.title"
       :detail="article.detail"
+      :disclaimer="article.disclaimer"
       to="/experience"
-      :banner="'/' + article.img"
       v-if="article"
     >
       <div class="w-full flex flex-col gap-3 mt-6">
@@ -14,15 +14,16 @@
           class="slide-in-delay flex flex-col gap-1.5 shadow-lg border bg-module px-4 py-3 rounded-lg border-border"
           style="--delay: 2"
         >
-          <div class="flex items-center gap-1.5">
+          <div class="flex items-center gap-1.5 text-sm sm:text-base">
             <img src="/svnrnns.png" class="h-6 w-6 rounded-full" />
-            <span
-              ><a
+            <span>
+              <a
                 href="https://twitter.com/svnrnns"
                 target="_blank"
                 class="text-heading hover:underline"
-                >@svnrnns</a
               >
+                @svnrnns
+              </a>
               commented {{ randomCommentedDay }} days ago.</span
             >
           </div>
@@ -39,6 +40,9 @@ import PageWrapper from "../components/PageWrapper.vue";
 import { useRoute } from "vue-router";
 import { ref, computed } from "vue";
 import { getArticle } from "/src/api/supabase-api.js";
+
+const zeusDisclaimer =
+  "This article does not contain any image in accordance with Zeus privacy policies";
 
 const route = useRoute();
 
