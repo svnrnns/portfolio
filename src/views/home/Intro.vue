@@ -14,7 +14,7 @@
     >
     <ul class="flex items-center gap-3 slide-in-delay" style="--delay: 4">
       <li>
-        <a>CV</a>
+        <a href="https://read.cv/svnrnns" target="_blank">CV</a>
       </li>
       <li>
         <router-link to="/experience">Experience</router-link>
