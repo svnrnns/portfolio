@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col divide-y divide-font/30">
+  <div class="flex flex-col divide-y divide-font/20">
     <router-link
       :to="to + item[param]"
       class="flex items-center justify-between py-3 cursor-pointer"
@@ -7,7 +7,7 @@
     >
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
         <span class="text-heading hover:underline">{{ item[name] }}</span>
-        <span class="text-sm">{{ item[detail] }}</span>
+        <span class="text-sm" v-if="item[detail]">{{ item[detail] }}</span>
       </div>
       <span class="text-sm">{{ item[date] }}</span>
     </router-link>

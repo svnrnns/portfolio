@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import Intro from "./components/Intro.vue";
-import ActiveJob from "./components/ActiveJob.vue";
-import Connect from "./components/Connect.vue";
+import Intro from "./home/Intro.vue";
+import ActiveJob from "./home/ActiveJob.vue";
+import Connect from "./home/Connect.vue";
 </script>

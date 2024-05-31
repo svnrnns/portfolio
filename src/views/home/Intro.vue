@@ -23,7 +23,7 @@
         <a>Side-Projects</a>
       </li>
       <li>
-        <a>Docs</a>
+        <router-link to="/docs">Docs</router-link>
       </li>
     </ul>
     <div

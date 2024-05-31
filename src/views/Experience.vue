@@ -22,5 +22,5 @@
 <script setup>
 import List from "/src/components/List.vue";
 import PageWrapper from "/src/components/PageWrapper.vue";
-import projects from "/src/api/projects.js";
+import projects from "/src/api/data/projects.js";
 </script>
