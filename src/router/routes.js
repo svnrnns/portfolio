@@ -1,32 +1,32 @@
-import { createRouter, createWebHistory } from "vue-router";
-import { nextTick } from "vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import { nextTick } from 'vue';
 
 // Routes
 const routes = [
   {
-    path: "/:pathMatch(.*)*",
-    name: "404",
-    component: () => import("../views/404.vue"),
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: () => import('../views/404.vue'),
   },
   {
-    path: "/",
-    name: "Home",
-    component: () => import("../views/Home.vue"),
+    path: '/',
+    name: 'Home',
+    component: () => import('../views/Home.vue'),
   },
   {
-    path: "/experience",
-    name: "Experience",
-    component: () => import("../views/Experience.vue"),
+    path: '/work',
+    name: 'Work',
+    component: () => import('../views/Work.vue'),
   },
   {
-    path: "/article/:id",
-    name: "Article",
-    component: () => import("../views/Article.vue"),
+    path: '/article/:id',
+    name: 'Article',
+    component: () => import('../views/Article.vue'),
   },
   {
-    path: "/docs",
-    name: "Docs",
-    component: () => import("../views/Docs.vue"),
+    path: '/docs',
+    name: 'Docs',
+    component: () => import('../views/Docs.vue'),
   },
 ];
 
@@ -36,7 +36,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from) => {
-  const name = "seven rings - " + to.name;
+  const name = 'seven rings - ' + to.name;
   nextTick(() => {
     document.title = name;
   });

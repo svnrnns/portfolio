@@ -5,7 +5,7 @@
       :title="article.title"
       :detail="article.detail"
       :disclaimer="article.disclaimer"
-      to="/experience"
+      to="/work"
       v-if="article"
     >
       <div class="w-full flex flex-col gap-3 mt-6">
@@ -15,7 +15,10 @@
           style="--delay: 2"
         >
           <div class="flex items-center gap-1.5 text-sm sm:text-base">
-            <img src="/svnrnns.png" class="h-6 w-6 rounded-full" />
+            <img
+              src="/svnrnns.png"
+              class="h-6 w-6 rounded-full"
+            />
             <span>
               <a
                 href="https://twitter.com/svnrnns"
@@ -35,14 +38,14 @@
 </template>
 
 <script setup>
-import Loading from "../components/Loading.vue";
-import PageWrapper from "../components/PageWrapper.vue";
-import { useRoute } from "vue-router";
-import { ref, computed } from "vue";
-import { getArticle } from "/src/api/supabase-api.js";
+import Loading from '../components/Loading.vue';
+import PageWrapper from '../components/PageWrapper.vue';
+import { useRoute } from 'vue-router';
+import { ref, computed } from 'vue';
+import { getArticle } from '/src/api/supabase-api.js';
 
 const zeusDisclaimer =
-  "This article does not contain any image in accordance with Zeus privacy policies";
+  'This article does not contain any image in accordance with Zeus privacy policies';
 
 const route = useRoute();
 

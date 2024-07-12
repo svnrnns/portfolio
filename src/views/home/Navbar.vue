@@ -9,10 +9,10 @@
         cv
       </a>
       <router-link
-        to="/experience"
+        to="/work"
         class="clickable"
       >
-        experience
+        work
       </router-link>
       <a class="clickable">saas</a>
       <router-link
