@@ -1,22 +1,20 @@
 <template>
-  <div class="screen-setup items-center">
-    <PageWrapper
-      title="Enterprise Experience"
-      detail="List of most relevant projects I have been part of."
-      to="/"
+  <PageWrapper
+    title="Enterprise Experience"
+    detail="List of most relevant projects I have been part of."
+    to="/"
+  >
+    <List
+      class="w-full mt-6 px-1.5"
+      to="/article/"
+      param="article"
+      name="name"
+      detail="company"
+      date="year"
+      :data="projects"
     >
-      <List
-        class="w-full mt-6 px-1.5"
-        to="/article/"
-        param="article"
-        name="name"
-        detail="company"
-        date="year"
-        :data="projects"
-      >
-      </List>
-    </PageWrapper>
-  </div>
+    </List>
+  </PageWrapper>
 </template>
 
 <script setup>

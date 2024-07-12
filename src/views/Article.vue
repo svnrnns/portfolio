@@ -1,5 +1,5 @@
 <template>
-  <div class="screen-setup flex-center">
+  <div class="flex-center">
     <Loading v-if="articleLoading" />
     <PageWrapper
       :title="article.title"
@@ -11,7 +11,7 @@
       <div class="w-full flex flex-col gap-3 mt-6">
         <span class="px-2 slide-in-delay">{{ article.text }}</span>
         <div
-          class="slide-in-delay flex flex-col gap-1.5 shadow-lg border bg-module px-4 py-3 rounded-lg border-border"
+          class="slide-in-delay flex flex-col gap-1.5 shadow-lg bg-module px-4 py-3 rounded-lg"
           style="--delay: 2"
         >
           <div class="flex items-center gap-1.5 text-sm sm:text-base">

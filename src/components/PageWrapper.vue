@@ -1,8 +1,6 @@
 <template>
-  <div class="screen-setup flex flex-col items-center">
-    <div
-      class="flex flex-col gap-3 px-[7.5%] py-[10%] sm:px-0 sm:pt-32 sm:pb-32 w-full page"
-    >
+  <div class="flex flex-col items-center">
+    <div class="flex flex-col gap-3 w-full">
       <div
         class="flex items-start sm:items-center gap-2 pb-3"
         v-if="disclaimer"

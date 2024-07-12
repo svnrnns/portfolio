@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-full mb-14 slide-in-delay">
+  <aside class="w-full slide-in-delay">
     <nav class="flex items-center gap-3">
       <a
         href="https://read.cv/svnrnns"
