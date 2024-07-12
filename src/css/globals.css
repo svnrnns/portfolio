@@ -5,8 +5,12 @@
 
 html,
 body #app {
-  @apply overflow-x-hidden bg-body !p-0 text-font;
+  @apply overflow-x-hidden overflow-y-auto bg-body !p-0 text-font;
   scrollbar-width: thin;
+}
+
+.clickable {
+  @apply text-heading hover:underline cursor-pointer decoration-detail;
 }
 
 ::-webkit-scrollbar {
@@ -34,5 +38,5 @@ body #app {
 }
 
 .screen-setup {
-  @apply h-screen w-screen fixed overflow-x-hidden !overflow-y-auto;
+  @apply h-screen w-screen;
 }
