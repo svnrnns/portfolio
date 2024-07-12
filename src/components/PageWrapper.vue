@@ -43,18 +43,18 @@
 </template>
 
 <script setup>
-import CircleInfoIcon from "./iconics/CircleInfoIcon.vue";
-import ArrowUpRightIcon from "/src/components/iconics/ArrowUpLeftIcon.vue";
-import { onMounted } from "vue";
+import CircleInfoIcon from './iconics/CircleInfoIcon.vue';
+import ArrowUpRightIcon from '/src/components/iconics/ArrowUpLeftIcon.vue';
+import { onMounted } from 'vue';
 
-const props = defineProps(["title", "detail", "to", "banner", "disclaimer"]);
+const props = defineProps(['title', 'detail', 'to', 'banner', 'disclaimer']);
 
 onMounted(() => {
   if (props.banner != null) {
-    const banner = document.getElementById("banner");
+    const banner = document.getElementById('banner');
 
     banner.onload = () => {
-      banner.classList.remove("opacity-0");
+      banner.classList.remove('opacity-0');
     };
   }
 });

@@ -1,6 +1,10 @@
 <template>
   <div class="screen-setup overflow-hidden items-center">
-    <PageWrapper title="Documents" detail="Easy access to public docs." to="/">
+    <PageWrapper
+      title="Documents"
+      detail="Easy access to public docs."
+      to="/"
+    >
       <List
         class="w-full mt-6 px-1.5"
         to="/doc/"
@@ -16,7 +20,7 @@
 </template>
 
 <script setup>
-import List from "/src/components/List.vue";
-import PageWrapper from "/src/components/PageWrapper.vue";
-import docs from "/src/api/data/docs.js";
+import List from '/src/components/List.vue';
+import PageWrapper from '/src/components/PageWrapper.vue';
+import docs from '/src/api/data/docs.js';
 </script>

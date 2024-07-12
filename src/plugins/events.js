@@ -1,9 +1,9 @@
-import mitt from "mitt";
+import mitt from 'mitt';
 
 const mit = mitt();
 export default mit;
 
-import { onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted } from 'vue';
 
 export function eventListen(eventName, handler) {
   onMounted(() => {

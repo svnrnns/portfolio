@@ -1,5 +1,5 @@
-import { ref, computed } from "vue";
-import { supabase } from "./supabase-client";
+import { ref, computed } from 'vue';
+import { supabase } from './supabase-client';
 
 function processResponse(supabaseResponse) {
   let response = null;
@@ -27,9 +27,9 @@ export function getArticle(code) {
   const loading = ref(true);
 
   supabase
-    .from("articles")
-    .select("*")
-    .eq("code", code)
+    .from('articles')
+    .select('*')
+    .eq('code', code)
     .then((supabaseResponse) => {
       const {
         response: responseData,
