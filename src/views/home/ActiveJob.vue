@@ -3,7 +3,7 @@
     <a
       href="https://zeus.vision"
       target="_blank"
-      class="w-full rounded bg-module px-6 py-4 flex slide-in-delay gap-6 items-center hover:ring-1 hover:ring-border transition-all"
+      class="w-full rounded bg-module px-6 py-4 flex slide-in-delay gap-6 items-center transition-all"
       style="--delay: 4"
     >
       <ZeusIcon class="h-9 fill-rose-400" />

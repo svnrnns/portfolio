@@ -2,6 +2,7 @@
   <PageWrapper
     title="Enterprise Work"
     detail="List of most relevant projects I have been part of."
+    class="slide-in-delay"
     to="/"
   >
     <List
@@ -11,7 +12,8 @@
       name="name"
       detail="company"
       date="year"
-      :data="projects"
+      :data="list"
+      folder="work"
     >
     </List>
   </PageWrapper>
@@ -20,5 +22,6 @@
 <script setup>
 import List from '/src/components/List.vue';
 import PageWrapper from '/src/components/PageWrapper.vue';
+import { list } from '/src/api/data/work/list.js';
 import projects from '/src/api/data/projects.js';
 </script>

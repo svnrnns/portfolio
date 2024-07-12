@@ -1,6 +1,6 @@
 <template>
-  <div class="flex-center">
-    <Loading v-if="articleLoading" />
+  <div class="flex-center slide-in-delay">
+    <Loading v-if="!article" />
     <PageWrapper
       :title="article.title"
       :detail="article.detail"
@@ -9,10 +9,9 @@
       v-if="article"
     >
       <div class="w-full flex flex-col gap-3 mt-6">
-        <span class="px-2 slide-in-delay">{{ article.text }}</span>
+        <span class="px-2">{{ article.text }}</span>
         <div
-          class="slide-in-delay flex flex-col gap-1.5 shadow-lg bg-module px-4 py-3 rounded-lg"
-          style="--delay: 2"
+          class="flex flex-col gap-1.5 shadow-lg bg-module px-4 py-3 rounded-lg"
         >
           <div class="flex items-center gap-1.5 text-sm sm:text-base">
             <img
@@ -38,24 +37,30 @@
 </template>
 
 <script setup>
-import Loading from '../components/Loading.vue';
-import PageWrapper from '../components/PageWrapper.vue';
+import Loading from '/src/components/Loading.vue';
+import PageWrapper from '/src/components/PageWrapper.vue';
+import { workArticleMapping } from '/src/api/data/work/list';
 import { useRoute } from 'vue-router';
 import { ref, computed } from 'vue';
-import { getArticle } from '/src/api/supabase-api.js';
-
-const zeusDisclaimer =
-  'This article does not contain any image in accordance with Zeus privacy policies';
 
 const route = useRoute();
+const articleId = route.params.id;
 
-const articleResponse = getArticle(route.params.id);
+const url = window.location.href;
+const folder = new URL(url).searchParams.get('folder');
+
 const article = computed(() => {
-  return articleResponse?.value?.response;
+  return getArticle(folder, articleId);
 });
-const articleLoading = computed(() => {
-  return articleResponse?.value?.loading;
-});
+
+const getArticle = function getArticleFunction(dir, id) {
+  if (!dir || !id) return null;
+
+  switch (dir) {
+    case 'work':
+      return workArticleMapping[id];
+  }
+};
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max) + 1;

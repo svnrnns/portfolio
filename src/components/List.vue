@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col divide-y divide-font/20">
     <router-link
-      :to="to + item[param]"
+      :to="to + item[param] + '?folder=' + folder"
       class="flex items-center justify-between py-3 cursor-pointer"
       v-for="item in data"
     >
@@ -10,8 +10,9 @@
         <span
           class="text-sm"
           v-if="item[detail]"
-          >{{ item[detail] }}</span
         >
+          {{ item[detail] }}
+        </span>
       </div>
       <span class="text-sm">{{ item[date] }}</span>
     </router-link>
@@ -19,5 +20,5 @@
 </template>
 
 <script setup>
-defineProps(['to', 'param', 'name', 'detail', 'date', 'data']);
+defineProps(['to', 'param', 'name', 'detail', 'date', 'data', 'folder']);
 </script>
