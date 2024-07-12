@@ -1,6 +1,6 @@
 <template>
   <PageWrapper
-    title="Enterprise Experience"
+    title="Enterprise Work"
     detail="List of most relevant projects I have been part of."
     to="/"
   >
