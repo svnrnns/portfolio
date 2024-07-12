@@ -60,6 +60,8 @@ const getArticle = function getArticleFunction(dir, id) {
     case 'work':
       return workArticleMapping[id];
   }
+
+  return undefined;
 };
 
 function getRandomInt(max) {
