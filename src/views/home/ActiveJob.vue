@@ -6,6 +6,8 @@
     <article class="flex flex-col gap-1.5 w-full">
       <a
         class="flex items-center gap-3 transition-all hover:translate-x-2 cursor-pointer"
+        href="https://zeus.vision"
+        target="_blank"
       >
         <h2 class="text-xl font-medium text-heading">Zeus by Llyc</h2>
         <ArrowUpLeftIcon class="h-4 rotate-90 fill-font mr-auto" />
