@@ -5,6 +5,9 @@
     <Bento class="w-ful" />
     <ActiveJob class="w-full" />
     <Connect class="w-full" />
+    <span class="text-detail text-xs w-full">
+      Portfolio heavily inspired by leerob's one.
+    </span>
   </div>
 </template>
 

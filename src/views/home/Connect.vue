@@ -2,12 +2,12 @@
   <div class="flex flex-col gap-5">
     <span
       class="text-lg font-medium text-heading slide-in-delay"
-      style="--delay: 5"
+      style="--delay: 7"
       >Connect</span
     >
     <ul
       class="flex items-center gap-3 slide-in-delay"
-      style="--delay: 6"
+      style="--delay: 8"
     >
       <li v-for="item in connect">
         <a

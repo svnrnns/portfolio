@@ -6,7 +6,7 @@
       :src="src"
       loading="eager"
       draggable="false"
-      class="object-cover opacity-0"
+      class="object-cover opacity-0 h-full w-full"
     />
   </div>
 </template>
@@ -20,8 +20,6 @@ const isReady = ref(false);
 
 onMounted(() => {
   const img = document.getElementById(props.aidi);
-
-  console.log(img);
 
   img.onload = () => {
     isReady.value = true;

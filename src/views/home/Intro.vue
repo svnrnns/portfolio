@@ -10,14 +10,19 @@
       in mind.
     </span>
     <span>
-      I specialize in building SaaS applications, often having to choose between
-      my two sweeties:
+      I specialize in building
+      <router-link
+        to="/saas"
+        class="clickable underline"
+        >saas</router-link
+      >
+      applications, usually having to pick between my two faves:
       <TechBadge tech="react" />
       and
       <TechBadge tech="vue" />
-      . However, I always power them with
+      . But no matter what,
       <TechBadge tech="supabase" />
-      .
+      is always my go-to for the backend.
     </span>
   </section>
 </template>
