@@ -1,7 +1,7 @@
 .slide-in-delay {
   opacity: 0;
-  animation: slide-in forwards ease-in-out 0.5s;
-  animation-delay: calc(var(--delay) * 55ms);
+  animation: slide-in forwards ease-out 0.5s;
+  animation-delay: calc(var(--delay) * 100ms);
 }
 
 @keyframes slide-in {

@@ -1,5 +1,5 @@
 export default {
-  border: '#dddddd',
+  border: '#d2d9e9',
   body: '#f9fafb',
   module: '#F0F0FD',
   box: '#cccccc',

@@ -9,4 +9,12 @@
 
 <script setup>
 import Navbar from './views/Navbar.vue';
+
+const setDarkTheme = () => {
+  const isDarkMode = localStorage.getItem('isDark') === 'true';
+
+  if (isDarkMode) document.documentElement.setAttribute('data-theme', 'dark');
+};
+
+setDarkTheme();
 </script>

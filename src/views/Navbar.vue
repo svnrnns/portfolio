@@ -1,12 +1,18 @@
 <template>
   <aside class="w-full slide-in-delay flex items-center justify-between">
     <nav class="flex items-center gap-3">
+      <router-link
+        to="/"
+        class="clickable"
+      >
+        home
+      </router-link>
       <a
         href="https://read.cv/svnrnns"
         target="_blank"
         class="clickable"
       >
-        cv
+        resume
       </a>
       <router-link
         to="/work"
