@@ -10,8 +10,8 @@
       in mind.
     </span>
     <span>
-      I specialize in building SaaS applicationsn, often having to choose
-      between my two sweeties:
+      I specialize in building SaaS applications, often having to choose between
+      my two sweeties:
       <TechBadge tech="react" />
       and
       <TechBadge tech="vue" />
