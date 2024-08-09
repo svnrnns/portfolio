@@ -8,6 +8,15 @@
     <span class="text-detail text-xs w-full">
       Portfolio heavily inspired by leerob's one.
     </span>
+    <div class="w-full -mt-12">
+      <img
+        class="h-9 w-9"
+        alt="the bongo cat"
+        loading="lazy"
+        draggable="false"
+        src="https://cdn.betterttv.net/emote/5ba6d5ba6ee0c23989d52b10/3x.webp"
+      />
+    </div>
   </div>
 </template>
 

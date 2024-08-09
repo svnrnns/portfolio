@@ -23,5 +23,4 @@
 import List from '/src/components/List.vue';
 import PageWrapper from '/src/components/PageWrapper.vue';
 import { list } from '/src/api/data/work/list.js';
-import projects from '/src/api/data/projects.js';
 </script>

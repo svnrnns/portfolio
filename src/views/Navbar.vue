@@ -12,13 +12,13 @@
         target="_blank"
         class="clickable"
       >
-        resume
+        cv
       </a>
       <router-link
-        to="/work"
+        to="/blog"
         class="clickable"
       >
-        work
+        blog
       </router-link>
       <a class="clickable">saas</a>
       <router-link

@@ -1,14 +1,10 @@
 <template>
-  <div class="flex flex-col gap-5">
-    <span
-      class="text-lg font-medium text-heading slide-in-delay"
-      style="--delay: 7"
-      >Connect</span
-    >
-    <ul
-      class="flex items-center gap-3 slide-in-delay"
-      style="--delay: 8"
-    >
+  <div
+    class="flex flex-col gap-5 slide-in-delay"
+    style="--delay: 7"
+  >
+    <span class="text-lg font-medium text-heading">Connect</span>
+    <ul class="flex items-center gap-3">
       <li v-for="item in connect">
         <a
           class="flex items-center gap-1.5"

@@ -1,22 +1,20 @@
 <template>
-  <div class="screen-setup overflow-hidden items-center">
-    <PageWrapper
-      title="Documents"
-      detail="Easy access to public docs."
-      to="/"
+  <PageWrapper
+    title="Documents"
+    detail="Easy access to public docs."
+    to="/"
+  >
+    <List
+      class="w-full mt-6 px-1.5"
+      to="/doc/"
+      param="doc"
+      name="name"
+      detail="detail"
+      date="date"
+      :data="docs"
     >
-      <List
-        class="w-full mt-6 px-1.5"
-        to="/doc/"
-        param="doc"
-        name="name"
-        detail="detail"
-        date="date"
-        :data="docs"
-      >
-      </List>
-    </PageWrapper>
-  </div>
+    </List>
+  </PageWrapper>
 </template>
 
 <script setup>
