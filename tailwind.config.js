@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import colors from './tailwindcss/colors.js';
+import theaming from './tailwindcss/plugins/theaming.js';
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -7,14 +9,7 @@ export default {
     },
     extend: {
       colors: {
-        border: '#222222',
-        body: '#0e1011',
-        module: '#191919',
-        border: '#404040',
-        box: '#444444',
-        font: '#b5b5b5',
-        detail: '#6b6b6b',
-        heading: '#fff',
+        ...colors,
       },
       fontSize: {
         sm: ['14px', { lineHeight: '21px' }],
@@ -24,5 +19,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [theaming, require('@tailwindcss/forms')],
 };

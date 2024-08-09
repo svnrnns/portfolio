@@ -1,0 +1,10 @@
+export default {
+  border: '#222222',
+  body: '#0e1011',
+  module: '#191919',
+  border: '#404040',
+  box: '#444444',
+  font: '#b5b5b5',
+  detail: '#6b6b6b',
+  heading: '#fff',
+};

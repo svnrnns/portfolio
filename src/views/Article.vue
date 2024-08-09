@@ -10,9 +10,7 @@
     >
       <div class="w-full flex flex-col gap-3 mt-6">
         <span class="px-2">{{ article.text }}</span>
-        <div
-          class="flex flex-col gap-1.5 shadow-lg bg-module px-4 py-3 rounded-lg"
-        >
+        <div class="flex flex-col gap-1.5 bg-module px-4 py-3 rounded-lg">
           <div class="flex items-center gap-1.5 text-sm sm:text-base">
             <img
               src="/svnrnns.png"

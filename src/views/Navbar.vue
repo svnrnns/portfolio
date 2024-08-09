@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-full slide-in-delay">
+  <aside class="w-full slide-in-delay flex items-center justify-between">
     <nav class="flex items-center gap-3">
       <a
         href="https://read.cv/svnrnns"
@@ -22,5 +22,10 @@
         docs
       </router-link>
     </nav>
+    <ThemeSwitcher />
   </aside>
 </template>
+
+<script setup>
+import ThemeSwitcher from '/src/components/ThemeSwitcher.vue';
+</script>
