@@ -6,4 +6,5 @@ export default {
   font: '#333333',
   detail: '#999999',
   heading: '#000000',
+  warning: '#d97706',
 };

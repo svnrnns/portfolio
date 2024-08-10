@@ -4,10 +4,8 @@
       class="flex items-start sm:items-center gap-2 pb-3"
       v-if="disclaimer"
     >
-      <CircleInfoIcon
-        class="h-3 w-3 mt-1 sm:mt-0 aspect-square fill-amber-200"
-      />
-      <span class="text-amber-200 text-xs sm:text-sm flex-1">
+      <CircleInfoIcon class="h-3 w-3 mt-1 sm:mt-0 aspect-square fill-warning" />
+      <span class="text-warning text-xs sm:text-sm flex-1">
         {{ disclaimer }}
       </span>
     </div>

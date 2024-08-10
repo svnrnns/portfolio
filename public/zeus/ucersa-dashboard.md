@@ -12,6 +12,6 @@ The introduction of Zeus has marked a significant transformation in how Ucersa m
 
 This is one of the oldest ongoing projects at Zeus, and it continues to evolve to this day. My contributions to the project include the development of three dashboards within Ucersa's application, including a tool remarkably similar to modern Google Calendar functionalities.
 
-This project presented an exciting challenge due to its technical requirements and the need to align with Zeus's vision for Ucersa's monitoring tool. The final result is a user interface that combines aesthetic appeal with effectiveness, enhancing business decision-making by visualizing and presenting critical data.
+This project presented an exciting challenge due to its technical requirements and the need to align with Zeus' vision for Ucersa's monitoring tool. The final result is a user interface that combines aesthetic appeal with effectiveness, enhancing business decision-making by visualizing and presenting critical data.
 
 > For additional information on the project or the technologies involved, please refer to Zeus by LLYC.

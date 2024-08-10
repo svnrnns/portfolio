@@ -3,7 +3,11 @@
     title="Posts"
     detail="Access public posts, including work related texts, guides, and more."
     :disclaimer="
-      detail ? `Only showing results of ${capitalize(detail)}` : null
+      detail
+        ? `Only showing ${filteredPosts.length} results of type ${capitalize(
+            detail
+          )}.`
+        : null
     "
     to="/"
   >

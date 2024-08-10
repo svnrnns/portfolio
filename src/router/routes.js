@@ -31,7 +31,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from) => {
-  const name = 'seven rings - ' + to.name;
+  const name = 'seven rings • ' + to.name.toLocaleLowerCase();
   nextTick(() => {
     document.title = name;
   });

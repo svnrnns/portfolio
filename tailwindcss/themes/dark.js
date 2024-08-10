@@ -7,4 +7,5 @@ export default {
   font: '#d4d4d4',
   detail: '#6b6b6b',
   heading: '#fff',
+  warning: '#fde68a',
 };
