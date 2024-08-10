@@ -36,7 +36,7 @@ const success = ref(true);
 
 const readFile = async function readMarkdownFile() {
   try {
-    const path = `/src/api/${props.folder}/${props.item}.md`;
+    const path = `/${props.folder}/${props.item}.md`;
     const response = await fetch(path);
     if (!response.ok) {
       success.value = false;
