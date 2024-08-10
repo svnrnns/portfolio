@@ -1,7 +1,7 @@
 <template>
   <PageWrapper
     title="404 - Page not found"
-    detail="man..."
+    detail="man"
     to="/"
   >
     <div class="h-32 w-32 flex items-start mt-6 rounded-xl overflow-hidden">
@@ -10,7 +10,7 @@
         class="rounded-xl h-full w-full"
         draggable="false"
         loading="lazy"
-        alt="man..."
+        alt="sadgers"
       />
     </div>
   </PageWrapper>

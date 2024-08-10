@@ -10,7 +10,7 @@ body #app {
 }
 
 .clickable {
-  @apply text-heading hover:underline cursor-pointer decoration-detail;
+  @apply text-heading hover:underline cursor-pointer decoration-detail decoration-2 underline-offset-2;
 }
 
 ::-webkit-scrollbar {

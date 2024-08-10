@@ -14,19 +14,14 @@ const routes = [
     component: () => import('../views/Home.vue'),
   },
   {
-    path: '/blog',
-    name: 'Blog',
-    component: () => import('../views/Blog.vue'),
+    path: '/posts',
+    name: 'Posts',
+    component: () => import('../views/Posts.vue'),
   },
   {
-    path: '/article/:id',
-    name: 'Article',
-    component: () => import('../views/Article.vue'),
-  },
-  {
-    path: '/docs',
-    name: 'Docs',
-    component: () => import('../views/Docs.vue'),
+    path: '/post',
+    name: 'Post',
+    component: () => import('../views/Post.vue'),
   },
 ];
 

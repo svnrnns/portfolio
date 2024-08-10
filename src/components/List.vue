@@ -1,24 +1,33 @@
 <template>
-  <div class="flex flex-col divide-y divide-font/20">
-    <router-link
-      :to="to + item[param] + '?folder=' + folder"
-      class="flex items-center justify-between py-3 cursor-pointer"
-      v-for="item in data"
+  <div class="w-full">
+    <div
+      class="flex flex-col divide-y divide-font/20"
+      v-if="data.length > 0"
     >
-      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-        <span class="text-heading hover:underline">{{ item[name] }}</span>
-        <span
-          class="text-sm"
-          v-if="item[detail]"
+      <router-link
+        :to="`/post?folder=${item.folder}&item=${item.item}`"
+        class="flex items-center justify-between py-3 cursor-pointer"
+        :key="item.item"
+        v-for="item in data"
+      >
+        <div
+          class="flex flex-col sm:flex-row items-start sm:items-center gap-3"
         >
-          {{ item[detail] }}
-        </span>
-      </div>
-      <span class="text-sm">{{ item[date] }}</span>
-    </router-link>
+          <span class="text-heading hover:underline">{{ item.name }}</span>
+          <span
+            class="text-sm text-detail"
+            v-if="item.detail"
+          >
+            {{ item.detail }}
+          </span>
+        </div>
+        <span class="text-sm">{{ item.date }}</span>
+      </router-link>
+    </div>
+    <span v-else>This list is empty</span>
   </div>
 </template>
 
 <script setup>
-defineProps(['to', 'param', 'name', 'detail', 'date', 'data', 'folder']);
+defineProps(['data']);
 </script>

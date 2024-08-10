@@ -3,7 +3,7 @@
     class="flex flex-col gap-3 w-full slide-in-delay"
     style="--delay: 5"
   >
-    <article class="flex flex-col gap-1.5 w-full">
+    <article class="flex flex-col w-full">
       <a
         class="flex items-center gap-3 transition-all hover:translate-x-2 cursor-pointer"
         href="https://zeus.vision"
@@ -14,7 +14,7 @@
       </a>
       <p class="text-detail">Senior Frontend Developer, May 2023 - Now</p>
 
-      <ul class="w-full flex flex-col gap-3 mt-3">
+      <ul>
         <li>
           Developed the frontend for over 10 projects for major Spanish
           companies like Balearia, Telefonica, and many more, using Vue and
@@ -34,7 +34,7 @@
         <li class="text-sm text-detail">
           See all my articles from Zeus talking about my job
           <router-link
-            to="/articles"
+            to="/posts?detail=zeus"
             class="clickable underline !text-font"
           >
             here</router-link
@@ -50,12 +50,15 @@ import ArrowUpLeftIcon from '/src/components/iconics/ArrowUpLeftIcon.vue';
 </script>
 
 <style scoped>
+ul {
+  @apply my-5 w-full pl-6;
+  list-style-type: disc;
+}
 li {
-  @apply ml-6 relative pl-6;
+  @apply my-2;
 }
 
 li::marker {
   @apply text-detail;
-  content: '•';
 }
 </style>

@@ -15,17 +15,16 @@
         cv
       </a>
       <router-link
-        to="/blog"
+        to="/saas"
         class="clickable"
       >
-        blog
+        saas
       </router-link>
-      <a class="clickable">saas</a>
       <router-link
-        to="/docs"
+        to="/posts"
         class="clickable"
       >
-        docs
+        posts
       </router-link>
     </nav>
     <ThemeSwitcher />
