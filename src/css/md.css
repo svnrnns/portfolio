@@ -6,6 +6,10 @@
   @apply text-xl font-medium text-heading pb-2 mt-12 mb-6 border-b border-border;
 }
 
+.md h3 {
+  @apply text-lg font-medium text-heading;
+}
+
 .md p {
   @apply my-5;
 }
