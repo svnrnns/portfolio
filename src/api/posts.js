@@ -27,11 +27,4 @@ export default [
     detail: 'Design',
     item: 'typography-spacing',
   },
-  {
-    name: 'Building a Strong Twitter Presence for Developers',
-    date: '08/24',
-    folder: 'docs',
-    detail: 'Marketing',
-    item: 'growth-twitter-account',
-  },
 ];
