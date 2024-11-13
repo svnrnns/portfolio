@@ -7,10 +7,10 @@
       cx="0"
       cy="0"
       r="2.05"
-      fill="#61dafb"
+      fill="#61a8ff"
     />
     <g
-      stroke="#61dafb"
+      stroke="#61a8ff"
       stroke-width="1"
       fill="none"
     >

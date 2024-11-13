@@ -1,22 +1,24 @@
 <template>
-  <div
-    class="p-2 rounded-full flex items-center justify-center relative bg-module cursor-pointer"
-    @click="switchTheme"
-  >
-    <div class="h-3 w-3"></div>
-    <MoonIcon
-      class="h-3 absolute transition-transform duration-500 fill-heading"
-      :class="{
-        anim: !isDarkMode,
-      }"
-    />
+  <div class="fixed top-8 right-8 z-50">
+    <div
+      class="p-2 rounded-lg flex items-center justify-center relative bg-module shadow cursor-pointer"
+      @click="switchTheme"
+    >
+      <div class="h-3 w-3"></div>
+      <SunIcon
+        class="h-3 absolute transition-transform duration-500 fill-heading"
+        :class="{
+          anim: !isDarkMode,
+        }"
+      />
 
-    <SunIcon
-      class="h-4 absolute transition-transform duration-500 fill-heading"
-      :class="{
-        'anim rotate-180': isDarkMode,
-      }"
-    />
+      <MoonIcon
+        class="h-4 absolute transition-transform duration-500 fill-heading"
+        :class="{
+          'anim rotate-180': isDarkMode,
+        }"
+      />
+    </div>
   </div>
 </template>
 

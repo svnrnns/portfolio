@@ -1,10 +1,14 @@
 export default {
   border: '#d2d9e9',
   body: '#f9fafb',
-  module: '#F0F0FD',
+  module: '#f9fafb',
   box: '#cccccc',
   font: '#333333',
-  detail: '#999999',
+  detail: '#888',
   heading: '#000000',
   warning: '#d97706',
+  success: '#40d83d',
+  tag: '#f5f5f5',
+  'tag-border': '#e7e7e7',
+  'tag-text': '#505050',
 };

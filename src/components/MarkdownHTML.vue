@@ -2,7 +2,7 @@
   <div class="w-full">
     <div
       v-html="html"
-      class="w-full"
+      class="w-full md"
       v-if="success"
     ></div>
     <div
@@ -12,7 +12,7 @@
       <h1>{{ props.item }}</h1>
       <p>
         This post could not be found. Does it exist in folder
-        <strong> {{ props.folder }} </strong>?
+        <strong class="underline"> {{ props.folder }} </strong>?
       </p>
       <div class="h-32 w-32 flex items-start mt-6 rounded-xl overflow-hidden">
         <img

@@ -1,6 +1,6 @@
 .slide-in-delay {
   opacity: 0;
-  animation: slide-in forwards ease-out 0.5s;
+  animation: slide-in forwards ease-out 1s;
   animation-delay: calc(var(--delay) * 100ms);
 }
 

@@ -1,0 +1,32 @@
+.tooltip {
+  @apply relative;
+}
+.tooltip::before,
+.tooltip::after {
+  --y-axis: -100%;
+  position: absolute;
+  top: -0.25rem;
+  transform: translateX(-50%) translateY(var(--y-axis));
+  opacity: 0;
+  left: 50%;
+  transition: 450ms all;
+  transform-origin: bottom center;
+}
+
+.tooltip::before {
+  @apply bg-tag pointer-events-none px-3 py-1 w-max max-w-44 rounded-full text-xs text-tag-text shadow-lg ring-1 ring-tag-border text-center;
+  content: attr(data-tooltip);
+}
+
+.tooltip:hover::before {
+  --y-axis: -110%;
+  opacity: 1;
+}
+
+/* Apply hover styles only on devices that support hover (e.g., PCs) */
+/* @media (hover: hover) and (pointer: fine) {
+  .tooltip:hover::before {
+    --y-axis: -110%;
+    opacity: 1;
+  }
+} */
