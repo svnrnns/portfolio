@@ -8,6 +8,7 @@ export default {
   heading: '#000000',
   warning: '#d97706',
   success: '#40d83d',
+  danger: '#d83d3d',
   tag: '#f5f5f5',
   'tag-border': '#e7e7e7',
   'tag-text': '#505050',

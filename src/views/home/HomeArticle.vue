@@ -5,7 +5,7 @@
       :id="itemName"
     >
       <div
-        class="flex items-center gap-3 relative w-fit py-3 pr-3 rounded-full transition-all duration-150"
+        class="flex items-center gap-3 relative w-fit py-3 pr-3 transition-all duration-150"
         :class="{ 'article-title-shadow bg-body': isTitleSticky }"
       >
         <div

@@ -8,6 +8,8 @@ export default {
   detail: '#6b6b6b',
   heading: '#fff',
   warning: '#fde68a',
+  success: '#84ff82',
+  danger: '#ff6161',
   tag: '#2f2f2f', // Darker, muted tag background
   'tag-border': '#3a3a3a', // Darker border for the tag
   'tag-text': '#b5b5b5',

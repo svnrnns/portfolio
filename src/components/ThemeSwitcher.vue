@@ -1,19 +1,19 @@
 <template>
-  <div class="fixed top-8 right-8 z-50">
+  <div class="hover:scale-110 transition-all duration-300">
     <div
       class="p-2 rounded-lg flex items-center justify-center relative bg-module shadow cursor-pointer"
       @click="switchTheme"
     >
-      <div class="h-3 w-3"></div>
+      <div class="size-3"></div>
       <SunIcon
-        class="h-3 absolute transition-transform duration-500 fill-heading"
+        class="size-4 absolute transition-transform duration-500 fill-heading"
         :class="{
           anim: !isDarkMode,
         }"
       />
 
       <MoonIcon
-        class="h-4 absolute transition-transform duration-500 fill-heading"
+        class="size-4 absolute transition-transform duration-500 fill-heading"
         :class="{
           'anim rotate-180': isDarkMode,
         }"

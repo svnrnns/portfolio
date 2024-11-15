@@ -11,7 +11,7 @@ body #app {
 
 /* Texts  */
 h1 {
-  @apply text-2xl sm:text-2.5xl font-semibold;
+  @apply text-2xl sm:text-2.5xl font-semibold text-heading;
 }
 
 p {
@@ -39,7 +39,7 @@ p {
 }
 
 .tiny-text {
-  @apply text-xxs md:text-xs;
+  @apply text-xs;
 }
 
 /* Buttons */
