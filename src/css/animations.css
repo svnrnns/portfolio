@@ -14,3 +14,19 @@
     transform: translateY(0);
   }
 }
+
+.slide-in-from-left {
+  opacity: 0;
+  animation: slide-in-from-left forwards ease-out 1s;
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
