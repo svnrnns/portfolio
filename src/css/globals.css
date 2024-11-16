@@ -1,0 +1,105 @@
+* {
+  @apply font-albert;
+  scroll-behavior: smooth;
+}
+
+html,
+body #app {
+  @apply bg-body !p-0 text-font;
+  scrollbar-width: thin;
+}
+
+/* Texts  */
+h1 {
+  @apply text-2xl sm:text-2.5xl font-semibold text-heading;
+}
+
+p {
+  @apply text-xl sm:text-2xl font-light text-font;
+}
+
+.massive-text {
+  @apply text-2xl sm:text-2.5xl;
+}
+
+.huge-text {
+  @apply text-xl sm:text-2xl;
+}
+
+.large-text {
+  @apply text-lg sm:text-xl;
+}
+
+.medium-text {
+  @apply text-base lg:text-lg;
+}
+
+.smol-text {
+  @apply text-xs md:text-sm;
+}
+
+.tiny-text {
+  @apply text-xs;
+}
+
+/* Buttons */
+
+.main-btn {
+  @apply bg-heading text-body rounded-lg py-3 px-4 hover:px-6 font-semibold !leading-none cursor-pointer transition-all duration-300;
+}
+
+.sub-btn {
+  @apply bg-module text-heading shadow rounded-lg py-3 px-4 hover:px-6 font-semibold !leading-none cursor-pointer transition-all duration-300;
+}
+
+.sub-btn-icon {
+  @apply bg-module shadow rounded-lg p-3 cursor-pointer;
+}
+
+.article-title-shadow {
+  box-shadow: 0px 0 6px 3px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 30px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 40px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 60px 30px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 50px 20px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 62px 40px rgba(var(--color-body), var(--tw-bg-opacity));
+}
+
+.bp {
+  box-shadow: 0 0 6px 3px #fbfbfb, 0 0 30px 10px #fbfbfb,
+    0 0 40px 10px #fbfbfbcc, 0 0 60px 30px #fbfbfbb3, 0 0 50px 20px #fbfbfb99,
+    0 0 62px 40px #fbfbfb80;
+}
+
+.clickable {
+  @apply text-heading hover:underline cursor-pointer decoration-detail decoration-2 underline-offset-2;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-font/50 rounded;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.icon {
+  @apply fill-font hover:fill-white transition-all duration-300 hover:scale-105 hover:cursor-pointer;
+}
+
+.page {
+  @apply max-w-[558px];
+}
+
+.transition {
+  @apply transition-all duration-300;
+}
+
+.screen-setup {
+  @apply h-screen w-screen;
+}

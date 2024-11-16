@@ -1,0 +1,15 @@
+export default {
+  border: '#222222',
+  body: '#060606',
+  module: '#232122',
+  box: '#444444',
+  font: '#d4d4d4',
+  detail: '#6b6b6b',
+  heading: '#fcfbfc',
+  warning: '#fde68a',
+  success: '#84ff82',
+  danger: '#ff6161',
+  tag: '#2f2f2f',
+  'tag-border': '#3a3a3a',
+  'tag-text': '#b5b5b5',
+};

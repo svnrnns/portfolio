@@ -1,0 +1,45 @@
+.slide-in-delay {
+  opacity: 0;
+  animation: slide-in forwards ease-out 1s;
+  animation-delay: calc(var(--delay) * 100ms);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pulse {
+  animation: pulse 1s linear infinite forwards;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+}
+
+.div-pulse {
+  @apply bg-detail/10;
+  animation: div-pulse 1s linear infinite forwards;
+}
+
+@keyframes div-pulse {
+  0%,
+  100% {
+    @apply bg-detail/10;
+  }
+  50% {
+    @apply bg-detail/20;
+  }
+}
