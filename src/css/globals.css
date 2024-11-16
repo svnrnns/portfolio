@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-  @apply text-xl sm:text-2xl font-light;
+  @apply text-xl sm:text-2xl font-light text-font;
 }
 
 .massive-text {

@@ -26,13 +26,13 @@
         />
       </div>
     </div>
-    <span class="mt-1.5"> {{ position }} </span>
-    <span class="font-mono tiny-text text-detail">
+    <span class="font-mono tiny-text text-detail mt-1.5">
       {{ from }} -
       <span :class="{ 'text-success font-bold': !to }">
         {{ to ?? 'Now' }}
       </span>
     </span>
+    <span> {{ position }} </span>
     <MarkdownHTML
       folder="home"
       :item="itemName"

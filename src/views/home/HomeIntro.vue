@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col gap-3 w-full">
-    <div class="flex flex-col gap-1 mb-3">
+  <div class="flex flex-col gap-6 w-full">
+    <div class="flex flex-col gap-1">
       <h1>
         Hey, I'm Miguel.
         <span class="smol-text text-detail font-normal">(seven rings) </span>
@@ -15,13 +15,6 @@
       I create applications with a strong focus on quality, leaning into React
       and Vue for web and Kotlin and Swift for native.
     </h2>
-    <div class="flex items-center gap-3 mt-3 relative">
-      <TechBadge tech="vue" />
-      <TechBadge tech="react" />
-      <TechBadge tech="typescript" />
-      <TechBadge tech="kotlin" />
-      <TechBadge tech="swift" />
-    </div>
     <div class="flex flex-col md:flex-row md:items-center gap-3 mt-10">
       <div class="flex items-center gap-3">
         <CopyTextButton
@@ -54,7 +47,6 @@
 </template>
 
 <script setup>
-import TechBadge from '/src/components/TechBadge.vue';
 import TwitterIcon from '/src/components/iconics/TwitterIcon.vue';
 import LinkedinInIcon from '/src/components/iconics/LinkedinInIcon.vue';
 import CopyTextButton from '/src/components/CopyTextButton.vue';

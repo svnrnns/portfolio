@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tooltip p-1.5 bg-module shadow rounded-md hover:-translate-y-1 transition-all duration-300"
+    class="tooltip hover:-translate-y-1 transition-all duration-300"
     :data-tooltip="capitalize(tech)"
   >
     <component
