@@ -33,11 +33,17 @@
         >
           <TwitterIcon class="size-4 fill-heading" />
         </a>
-        <a class="sub-btn-icon">
-          <LinkedinInIcon
-            class="size-4 fill-heading"
-            href="https://www.linkedin.com/in/svnrnns/"
-          />
+        <a
+          class="sub-btn-icon"
+          href="https://www.linkedin.com/in/svnrnns/"
+        >
+          <LinkedinInIcon class="size-4 fill-heading" />
+        </a>
+        <a
+          class="sub-btn-icon"
+          href="https://www.github.com/svnrnns/"
+        >
+          <GitHubIcon class="size-4 fill-heading" />
         </a>
       </div>
     </div>
@@ -47,5 +53,7 @@
 <script setup>
 import TwitterIcon from '@/components/iconics/TwitterIcon.vue';
 import LinkedinInIcon from '@/components/iconics/LinkedinInIcon.vue';
+import GitHubIcon from '@/components/iconics/GitHubIcon.vue';
+
 import CopyTextButton from '@/components/CopyTextButton.vue';
 </script>
