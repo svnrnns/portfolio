@@ -56,24 +56,7 @@ p {
   @apply bg-module shadow rounded-lg p-3 cursor-pointer;
 }
 
-.article-title-shadow {
-  box-shadow: 0px 0 6px 3px rgba(var(--color-body), var(--tw-bg-opacity)),
-    0px 0 30px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
-    0px 0 40px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
-    0px 0 60px 30px rgba(var(--color-body), var(--tw-bg-opacity)),
-    0px 0 50px 20px rgba(var(--color-body), var(--tw-bg-opacity)),
-    0px 0 62px 40px rgba(var(--color-body), var(--tw-bg-opacity));
-}
-
-.bp {
-  box-shadow: 0 0 6px 3px #fbfbfb, 0 0 30px 10px #fbfbfb,
-    0 0 40px 10px #fbfbfbcc, 0 0 60px 30px #fbfbfbb3, 0 0 50px 20px #fbfbfb99,
-    0 0 62px 40px #fbfbfb80;
-}
-
-.clickable {
-  @apply text-heading hover:underline cursor-pointer decoration-detail decoration-2 underline-offset-2;
-}
+/* Scrollbar */
 
 ::-webkit-scrollbar {
   height: 5px;
@@ -84,22 +67,26 @@ p {
   @apply bg-font/50 rounded;
 }
 
+/* Utils */
 .flex-center {
   @apply flex items-center justify-center;
 }
 
-.icon {
-  @apply fill-font hover:fill-white transition-all duration-300 hover:scale-105 hover:cursor-pointer;
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
 }
 
 .page {
   @apply max-w-[558px];
 }
 
-.transition {
-  @apply transition-all duration-300;
-}
+/* Rest */
 
-.screen-setup {
-  @apply h-screen w-screen;
+.article-title-shadow {
+  box-shadow: 0px 0 6px 3px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 30px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 40px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 60px 30px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 50px 20px rgba(var(--color-body), var(--tw-bg-opacity)),
+    0px 0 62px 40px rgba(var(--color-body), var(--tw-bg-opacity));
 }
