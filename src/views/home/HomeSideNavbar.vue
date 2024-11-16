@@ -7,7 +7,7 @@
       v-for="(item, i) in items"
       :key="item.i"
       :href="item.href"
-      class="px-3 py-2 flex items-center gap-3 rounded-xl transition-all duration-500 group min-w-64 hover:scale-105"
+      class="px-3 py-2 flex items-center gap-3 side-nav-item rounded-2xl transition-all duration-500 group min-w-64"
     >
       <IconFromSvg
         :bg="item['icon-bg']"

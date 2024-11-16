@@ -90,3 +90,7 @@ p {
     0px 0 50px 20px rgba(var(--color-body), var(--tw-bg-opacity)),
     0px 0 62px 40px rgba(var(--color-body), var(--tw-bg-opacity));
 }
+
+.side-nav-item {
+  @apply hover:bg-body hover:bg-gradient-to-b from-body to-light hover:ring-1 hover:ring-border hover:shadow-lg shadow-gray-100/5;
+}

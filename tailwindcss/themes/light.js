@@ -1,5 +1,6 @@
 export default {
-  border: '#d2d9e9',
+  light: '#fff',
+  border: '#eeeeee',
   body: '#f9fafb',
   module: '#f9fafb',
   box: '#cccccc',

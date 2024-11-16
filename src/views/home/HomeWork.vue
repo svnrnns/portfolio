@@ -1,42 +1,44 @@
 <template>
-  <div class="w-full flex flex-col gap-1.5">
+  <div class="w-full">
     <div
-      class="w-full sticky top-2"
-      :id="itemName"
-    >
+      class="w-full h-44"
+      :id="htmlId"
+    ></div>
+    <div class="w-full flex flex-col gap-1.5">
       <div
-        class="flex items-center gap-3 relative w-fit py-3 pr-3 transition-all duration-150"
-        :class="{ 'work-title-shadow bg-body': isTitleSticky }"
+        class="w-full sticky top-2"
+        :id="itemName"
       >
         <div
-          v-if="icon && iconBg"
-          class="size-8 overflow-hidden p-1.5 rounded-lg md:absolute md:-translate-y-1/2 md:top-1/2 right-full md:mr-4 shadow"
-          :style="{ background: iconBg }"
+          class="flex items-center gap-3 relative w-fit py-3 pr-3 transition-all duration-150"
+          :class="{ 'work-title-shadow bg-body': isTitleSticky }"
         >
-          <component
-            :is="icon"
-            class="size-full"
+          <IconFromSvg
+            v-if="icon && iconBg"
+            class="md:absolute md:-translate-y-1/2 md:top-1/2 right-full md:mr-4"
+            :bg="iconBg"
+            :icon="icon"
+          />
+          <h1>{{ title }}</h1>
+
+          <Tag
+            :text="tag"
+            v-if="tag"
           />
         </div>
-        <h1>{{ title }}</h1>
-
-        <Tag
-          :text="tag"
-          v-if="tag"
-        />
       </div>
-    </div>
-    <span class="font-mono tiny-text text-detail mt-1.5">
-      {{ from }} -
-      <span :class="{ 'text-success font-bold': !to }">
-        {{ to ?? 'Now' }}
+      <span class="font-mono tiny-text text-detail mt-1.5">
+        {{ from }} -
+        <span :class="{ 'text-success font-bold': !to }">
+          {{ to ?? 'Now' }}
+        </span>
       </span>
-    </span>
-    <span class="font-medium"> {{ position }} </span>
-    <MarkdownHTML
-      folder="home"
-      :item="itemName"
-    />
+      <span class="font-medium"> {{ position }} </span>
+      <MarkdownHTML
+        folder="home"
+        :item="itemName"
+      />
+    </div>
   </div>
 </template>
 
@@ -44,6 +46,7 @@
 import Tag from '@/components/Tag.vue';
 import MarkdownHTML from '@/components/MarkdownHTML.vue';
 import { onMounted, onBeforeUnmount, ref } from 'vue';
+import IconFromSvg from '../../components/IconFromSvg.vue';
 
 const props = defineProps([
   'title',
@@ -54,6 +57,7 @@ const props = defineProps([
   'to',
   'position',
   'itemName',
+  'htmlId',
 ]);
 
 const isTitleSticky = ref(false);
