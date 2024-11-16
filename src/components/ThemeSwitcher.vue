@@ -29,7 +29,7 @@ import { ref } from 'vue';
 
 const isDarkMode = ref(localStorage.getItem('isDark') === 'true');
 
-const switchTheme = function switchThemeFunction() {
+const switchTheme = () => {
   const htmlTag = document.documentElement;
 
   if (isDarkMode.value) {
@@ -45,6 +45,7 @@ const switchTheme = function switchThemeFunction() {
   htmlTag.setAttribute('data-theme', 'dark');
 };
 </script>
+
 <style scoped>
 .anim {
   transform: rotate(360deg) scale(0);

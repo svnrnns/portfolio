@@ -32,9 +32,11 @@ import { onMounted, ref } from 'vue';
 import { marked } from 'marked';
 
 const props = defineProps(['folder', 'item']);
-const success = ref(true);
 
-const readFile = async function readMarkdownFile() {
+const success = ref(true);
+const html = ref('');
+
+const readFile = async () => {
   try {
     const path = `/${props.folder}/${props.item}.md`;
     const response = await fetch(path);
@@ -48,8 +50,6 @@ const readFile = async function readMarkdownFile() {
     return 'Runtime error';
   }
 };
-
-const html = ref('');
 
 async function loadContent() {
   const content = await readFile();

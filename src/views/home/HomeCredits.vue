@@ -5,8 +5,9 @@
       <a
         href="https://www.eikedrescher.com/"
         class="text-font underline underline-offset-2"
-        >Eike Drescher's</a
       >
+        Eike Drescher's
+      </a>
       one.
     </span>
     <div class="w-full">

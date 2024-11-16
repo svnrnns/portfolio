@@ -41,8 +41,8 @@
 </template>
 
 <script setup>
-import Tag from '/src/components/Tag.vue';
-import MarkdownHTML from '/src/components/MarkdownHTML.vue';
+import Tag from '@/components/Tag.vue';
+import MarkdownHTML from '@/components/MarkdownHTML.vue';
 import { onMounted, onBeforeUnmount, ref } from 'vue';
 
 const props = defineProps([

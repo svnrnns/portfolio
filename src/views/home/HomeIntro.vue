@@ -3,7 +3,7 @@
     <div class="flex flex-col gap-1">
       <h1>
         Hey, I'm Miguel.
-        <span class="smol-text text-detail font-normal">(seven rings) </span>
+        <span class="smol-text text-detail font-normal">(seven rings)</span>
       </h1>
     </div>
 
@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import TwitterIcon from '/src/components/iconics/TwitterIcon.vue';
-import LinkedinInIcon from '/src/components/iconics/LinkedinInIcon.vue';
-import CopyTextButton from '/src/components/CopyTextButton.vue';
+import TwitterIcon from '@/components/iconics/TwitterIcon.vue';
+import LinkedinInIcon from '@/components/iconics/LinkedinInIcon.vue';
+import CopyTextButton from '@/components/CopyTextButton.vue';
 </script>
