@@ -12,7 +12,7 @@
 
 <script setup>
 import JumpToTop from './components/JumpToTop.vue';
-import ThemeSwitcher from '/src/components/ThemeSwitcher.vue';
+import ThemeSwitcher from './components/ThemeSwitcher.vue';
 
 const setDarkTheme = () => {
   const isDarkMode = localStorage.getItem('isDark') === 'true';

@@ -1,8 +1,9 @@
 export default {
-  border: '#222222',
+  light: '#000',
+  border: '#121212',
   body: '#060606',
-  module: '#232122',
-  box: '#444444',
+  module: '#141414',
+  box: '#232122',
   font: '#d4d4d4',
   detail: '#6b6b6b',
   heading: '#fcfbfc',

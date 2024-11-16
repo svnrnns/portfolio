@@ -1,12 +1,13 @@
 <template>
-  <div class="w-full flex flex-col -mt-32">
+  <div class="w-full flex flex-col mt-32">
     <span class="text-detail text-xs w-full">
       Portfolio heavily inspired by
       <a
         href="https://www.eikedrescher.com/"
         class="text-font underline underline-offset-2"
-        >Eike Drescher's</a
       >
+        Eike Drescher's
+      </a>
       one.
     </span>
     <div class="w-full">

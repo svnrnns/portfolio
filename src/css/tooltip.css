@@ -14,12 +14,12 @@
 }
 
 .tooltip::before {
-  @apply bg-tag pointer-events-none px-3 py-1 w-max max-w-44 rounded-full text-xs text-tag-text shadow-lg ring-1 ring-tag-border text-center;
+  @apply bg-tag pointer-events-none px-3 py-1 w-max max-w-44 rounded-lg text-xs text-tag-text shadow-lg ring-1 ring-tag-border text-center;
   content: attr(data-tooltip);
 }
 
 .tooltip:hover::before {
-  --y-axis: -110%;
+  --y-axis: -120%;
   opacity: 1;
 }
 

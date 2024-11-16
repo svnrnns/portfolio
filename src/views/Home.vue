@@ -1,14 +1,17 @@
 <template>
-  <div class="flex flex-col items-center gap-52 mt-36">
+  <div class="flex flex-col items-center mt-12 md:mt-36">
+    <HomeSideNavbar />
     <HomeIntro class="slide-in-delay" />
-    <HomeArticle
+    <HomeIndex class="slide-in-delay" />
+    <HomeWork
       class="slide-in-delay"
       title="Zeus by Llyc"
       position="Senior Frontend Developer"
       from="May 2023"
       icon-bg="#f93f55"
-      :icon="ZeusIcon"
       item-name="zeus"
+      html-id="zeus-work"
+      :icon="ZeusIcon"
     />
     <HomeCredits />
   </div>
@@ -16,8 +19,10 @@
 
 <script setup>
 import HomeIntro from './home/HomeIntro.vue';
-import HomeArticle from './home/HomeArticle.vue';
+import HomeIndex from './home/HomeIndex.vue';
+import HomeWork from './home/HomeWork.vue';
 import HomeCredits from './home/HomeCredits.vue';
+import HomeSideNavbar from './home/HomeSideNavbar.vue';
 
-import ZeusIcon from '/src/components/iconics/ZeusIcon.vue';
+import ZeusIcon from '@/components/iconics/ZeusIcon.vue';
 </script>
