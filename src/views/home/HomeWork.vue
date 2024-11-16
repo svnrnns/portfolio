@@ -6,7 +6,7 @@
     >
       <div
         class="flex items-center gap-3 relative w-fit py-3 pr-3 transition-all duration-150"
-        :class="{ 'article-title-shadow bg-body': isTitleSticky }"
+        :class="{ 'work-title-shadow bg-body': isTitleSticky }"
       >
         <div
           v-if="icon && iconBg"
@@ -32,7 +32,7 @@
         {{ to ?? 'Now' }}
       </span>
     </span>
-    <span> {{ position }} </span>
+    <span class="font-medium"> {{ position }} </span>
     <MarkdownHTML
       folder="home"
       :item="itemName"

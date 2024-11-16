@@ -82,7 +82,7 @@ p {
 
 /* Rest */
 
-.article-title-shadow {
+.work-title-shadow {
   box-shadow: 0px 0 6px 3px rgba(var(--color-body), var(--tw-bg-opacity)),
     0px 0 30px 10px rgba(var(--color-body), var(--tw-bg-opacity)),
     0px 0 40px 10px rgba(var(--color-body), var(--tw-bg-opacity)),

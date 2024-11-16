@@ -1,12 +1,14 @@
 <template>
   <div
-    class="tooltip hover:-translate-y-1 transition-all duration-300"
+    class="tooltip hover:-translate-y-1 transition-all duration-300 w-fit shadow p-1.5 rounded-lg bg-module"
     :data-tooltip="capitalize(tech)"
   >
-    <component
-      :is="getIcon()"
-      class="size-5"
-    />
+    <div class="overflow-hidden rounded">
+      <component
+        :is="getIcon()"
+        class="size-5"
+      />
+    </div>
   </div>
 </template>
 
@@ -17,28 +19,22 @@ import SupabaseIcon from './iconics/SupabaseIcon.vue';
 import KotlinIcon from './iconics/KotlinIcon.vue';
 import SwiftIcon from './iconics/SwiftIcon.vue';
 import TypescriptIcon from './iconics/TypescriptIcon.vue';
+import LaravelIcon from './iconics/LaravelIcon.vue';
 
 const props = defineProps(['tech']);
 const icon = props.tech;
 
-const getIcon = () => {
-  switch (icon) {
-    case 'react':
-      return ReactIcon;
-    case 'vue':
-      return VueIcon;
-    case 'supabase':
-      return SupabaseIcon;
-    case 'kotlin':
-      return KotlinIcon;
-    case 'swift':
-      return SwiftIcon;
-    case 'typescript':
-      return TypescriptIcon;
-    default:
-      break;
-  }
+const iconMap = {
+  react: ReactIcon,
+  vue: VueIcon,
+  supabase: SupabaseIcon,
+  kotlin: KotlinIcon,
+  swift: SwiftIcon,
+  typescript: TypescriptIcon,
+  laravel: LaravelIcon,
 };
+
+const getIcon = () => iconMap[icon] || undefined;
 
 const capitalize = (str) => {
   return String(str).charAt(0).toUpperCase() + String(str).slice(1);
