@@ -1,0 +1,19 @@
+* {
+  @apply font-albert;
+  scroll-behavior: smooth;
+}
+
+html,
+body #app {
+  @apply bg-body !p-0 text-font;
+  scrollbar-width: thin;
+}
+
+/* Texts  */
+h1 {
+  @apply text-2xl sm:text-2xl font-semibold text-heading;
+}
+
+p {
+  @apply text-xl sm:text-2xl font-light text-font;
+}

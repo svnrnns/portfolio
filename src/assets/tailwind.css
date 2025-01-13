@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+@theme {
+  --font-albert: 'Albert Sans', 'sans-serif';
+  --font-mono: 'Robert Mono', 'monospace';
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+  --text-7xl: 72px;
+  --text-8xl: 96px;
+  --text-9xl: 128px;
+
+  --color-light: var(--theme-color-light);
+  --color-border: var(--theme-color-border);
+  --color-body: var(--theme-color-body);
+  --color-module: var(--theme-color-module);
+  --color-box: var(--theme-color-box);
+  --color-font: var(--theme-color-font);
+  --color-detail: var(--theme-color-detail);
+  --color-heading: var(--theme-color-heading);
+  --color-warning: var(--theme-color-warning);
+  --color-success: var(--theme-color-success);
+  --color-danger: var(--theme-color-danger);
+  --color-tag: var(--theme-color-tag);
+  --color-tag-border: var(--theme-color-tag-border);
+  --color-tag-text: var(--theme-color-tag-text);
+}
+
+@layer base {
+  :root {
+    --theme-color-light: #fff;
+    --theme-color-border: #eeeeee;
+    --theme-color-body: #f9fafb;
+    --theme-color-module: #f9fafb;
+    --theme-color-box: #cccccc;
+    --theme-color-font: #333333;
+    --theme-color-detail: #888;
+    --theme-color-heading: #000000;
+    --theme-color-warning: #d97706;
+    --theme-color-success: #40d83d;
+    --theme-color-danger: #d83d3d;
+    --theme-color-tag: #f5f5f5;
+    --theme-color-border: #e7e7e7;
+    --theme-color-text: #505050;
+  }
+
+  [data-theme='dark'] {
+    --theme-color-light: #000;
+    --theme-color-border: #121212;
+    --theme-color-body: #060606;
+    --theme-color-module: #141414;
+    --theme-color-box: #232122;
+    --theme-color-font: #d4d4d4;
+    --theme-color-detail: #6b6b6b;
+    --theme-color-heading: #fcfbfc;
+    --theme-color-warning: #fde68a;
+    --theme-color-success: #84ff82;
+    --theme-color-danger: #ff6161;
+    --theme-color-tag: #2f2f2f;
+    --theme-color-tag-border: #3a3a3a;
+    --theme-color-tag-text: #b5b5b5;
+  }
+}
