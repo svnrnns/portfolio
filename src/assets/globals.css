@@ -68,3 +68,12 @@ p {
 .page {
   @apply max-w-[558px];
 }
+
+/* Buttons */
+.text-btn {
+  @apply shadow rounded-lg py-3 px-4 hover:px-6 font-semibold !leading-none cursor-pointer transition-all duration-300;
+}
+
+.icon-btn {
+  @apply shadow rounded-lg p-3 cursor-pointer;
+}
