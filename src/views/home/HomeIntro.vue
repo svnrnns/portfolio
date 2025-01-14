@@ -11,14 +11,13 @@ import CopyTextButton from '@/components/CopyTextIcon.vue';
     <div class="flex flex-col gap-1">
       <h1>Miguel Montesinos.</h1>
     </div>
-    <span class="smol-text text-detail font-normal italic">noun</span>
 
-    <h2 class="massive-text font-light">
-      A developer who builds software that doesn't just function, it resonates,
-      designed to leave an impression.
+    <h2 class="gigantic-text font-light">
+      I build software that doesn't just function, it resonates, designed to
+      leave an impression.
     </h2>
-    <h2 class="massive-text font-light">
-      Specializes in applications with a strong focus on quality, leaning into
+    <h2 class="gigantic-text font-light">
+      Specialized in applications with a strong focus on quality, leaning into
       React and Vue for web and Kotlin and Swift for native.
     </h2>
     <div class="flex flex-col md:flex-row md:items-center gap-3 mt-10">

@@ -11,9 +11,60 @@ body #app {
 
 /* Texts  */
 h1 {
-  @apply text-2xl sm:text-2xl font-semibold text-heading;
+  @apply text-1xl sm:text-2xl font-semibold text-heading;
 }
 
 p {
   @apply text-xl sm:text-2xl font-light text-font;
+}
+
+.gigantic-text {
+  @apply text-1xl sm:text-2xl;
+}
+
+.massive-text {
+  @apply text-xl sm:text-1xl;
+}
+
+.huge-text {
+  @apply text-lg sm:text-xl;
+}
+
+.large-text {
+  @apply text-base sm:text-lg;
+}
+
+.medium-text {
+  @apply text-sm sm:text-base;
+}
+
+.small-text {
+  @apply text-xs md:text-sm;
+}
+
+.tiny-text {
+  @apply text-xxs lg:text-xs;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-font/50 rounded;
+}
+
+/* Lib */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+.page {
+  @apply max-w-[558px];
 }
