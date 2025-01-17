@@ -1,0 +1,40 @@
+.md h1 {
+  @apply text-2xl font-medium text-heading pb-2 mb-8 border-b border-border;
+}
+
+.md h2 {
+  @apply text-xl font-medium text-heading pb-2 mt-12 mb-6 border-b border-border;
+}
+
+.md h3 {
+  @apply text-lg font-medium text-heading;
+}
+
+.md p {
+  @apply my-6 text-1xl max-w-[558px] mx-auto;
+}
+
+.md blockquote p {
+  @apply text-detail text-sm;
+}
+
+.md strong {
+  @apply font-medium text-heading underline underline-offset-2 decoration-2 decoration-detail;
+}
+
+.md img {
+  @apply rounded-lg my-14;
+}
+
+.md ul {
+  @apply my-5 pl-6;
+  list-style: disc;
+}
+
+.md li {
+  @apply my-2;
+}
+
+.md li::marker {
+  @apply text-detail;
+}

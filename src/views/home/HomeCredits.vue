@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col mt-32">
+  <div class="w-full flex flex-col page-block-raw">
     <span class="text-detail tiny-text w-full">
       Portfolio heavily inspired by
       <a

@@ -31,8 +31,8 @@ const positions: HomePosition[] = [
 </script>
 
 <template>
-  <div class="flex flex-col items-center mt-12 md:mt-36">
-    <HomeIntro class="slide-in-delay" />
+  <div class="flex-col-center gap-40 w-full page">
+    <HomeIntro />
     <HomeIndex />
     <HomePosition
       v-for="(position, i) in positions"

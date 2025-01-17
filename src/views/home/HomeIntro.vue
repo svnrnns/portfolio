@@ -7,7 +7,7 @@ import CopyTextButton from '@/components/CopyTextIcon.vue';
 </script>
 
 <template>
-  <div class="flex flex-col gap-6 w-full">
+  <div class="flex flex-col page-block-raw gap-6 w-full">
     <div class="flex flex-col gap-1">
       <h1>Miguel Montesinos.</h1>
     </div>

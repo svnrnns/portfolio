@@ -65,13 +65,32 @@ p {
   @apply flex flex-col items-center justify-center;
 }
 
-.page {
-  @apply max-w-[558px];
+/* App */
+@layer utilities {
+  .page {
+    @apply max-w-[813px] mx-auto;
+  }
+
+  .page-block-raw {
+    @apply max-w-[558px];
+  }
+
+  .page-block-padding-children {
+    @apply max-w-[590px];
+  }
+
+  .page-block-padding-children .child {
+    @apply px-4;
+  }
+
+  .page-block-padding-children .child-full {
+    @apply p-4;
+  }
 }
 
 /* Buttons */
 .text-btn {
-  @apply shadow rounded-lg py-3 px-4 hover:px-6 font-semibold !leading-none cursor-pointer transition-all duration-300;
+  @apply shadow rounded-lg py-3 px-4 font-semibold !leading-none cursor-pointer;
 }
 
 .icon-btn {

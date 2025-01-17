@@ -1,19 +1,17 @@
 <script setup lang="ts">
-import ArrowAnchor from './index/HomeIndexAnchor.vue';
+import TextRightArrow from '@/components/TextRightArrow.vue';
 </script>
 
 <template>
-  <div class="w-full">
-    <div class="w-full h-44"></div>
-
-    <div class="flex flex-col w-full gap-16">
-      <div class="flex flex-col gap-4">
-        <span class="tiny-text text-detail mb-4">Work</span>
-        <ArrowAnchor
-          text="Zeus by Llyc"
-          href="#zeus"
-        />
-      </div>
+  <div class="w-full page-block-padding-children">
+    <div class="w-full flex flex-col gap-4">
+      <span class="child tiny-text text-detail">Work Experience</span>
+      <a
+        class="child-full cursor-pointer rounded-lg hover:scale-103 hover:-rotate-1 hover:bg-box transition-all duration-500"
+        href="#zeus"
+      >
+        <TextRightArrow text="Zeus by Llyc" />
+      </a>
     </div>
   </div>
 </template>
