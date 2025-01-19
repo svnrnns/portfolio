@@ -76,15 +76,15 @@ p {
   }
 
   .page-block-padding-children {
-    @apply max-w-[590px];
+    @apply max-w-[558px] sm:max-w-[590px];
   }
 
   .page-block-padding-children .child {
-    @apply px-4;
+    @apply sm:px-4;
   }
 
   .page-block-padding-children .child-full {
-    @apply p-4;
+    @apply sm:p-4;
   }
 }
 

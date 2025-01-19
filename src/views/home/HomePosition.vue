@@ -49,7 +49,7 @@ onMounted(() => {
   <div class="w-full flex flex-col gap-1.5">
     <div class="w-full sticky top-0">
       <div
-        class="w-full px-20.5 py-4 flex items-center gap-3 bg-body"
+        class="w-full sm:px-20.5 py-4 flex items-center gap-3 bg-body"
         :id="htmlId"
       >
         <IconWithBackground
@@ -66,7 +66,9 @@ onMounted(() => {
       ></div>
     </div>
 
-    <span class="font-mono tiny-text text-detail w-full page-block-raw mx-auto">
+    <span
+      class="!font-mono tiny-text text-detail w-full page-block-raw mx-auto"
+    >
       {{ dateToMonthYearString(data.from) }} -
       <span :class="{ 'text-success font-medium': !data.to }">
         {{ data.to ? dateToMonthYearString(data.to) : 'Now' }}

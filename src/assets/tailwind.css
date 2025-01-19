@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @theme {
   --font-albert: 'Albert Sans', 'sans-serif';
-  --font-mono: 'Robert Mono', 'monospace';
+  --font-mono: 'Roboto Mono', 'monospace';
 
   --text-xxs: 10px;
   --text-xxs--line-height: calc(var(--text-xxs) * 1.3);

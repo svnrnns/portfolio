@@ -3,13 +3,13 @@ import HomeIntro from './home/HomeIntro.vue';
 import HomeIndex from './home/HomeIndex.vue';
 import HomePosition from './home/HomePosition.vue';
 import HomeCredits from './home/HomeCredits.vue';
+// import HomeSideNavbar from './home/HomeSideNavbar.vue';
 
 import { positions } from '@/api/positions';
-import HomeSideNavbar from './home/HomeSideNavbar.vue';
 </script>
 
 <template>
-  <div class="flex-col-center gap-40 w-full page fade-in">
+  <div class="flex-col-center gap-24 sm:gap-40 w-full page fade-in">
     <!-- <HomeSideNavbar class="fade-slide-in-from-left" /> -->
     <HomeIntro />
     <HomeIndex />
