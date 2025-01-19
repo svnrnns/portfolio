@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import generateUuid from '@/fns/uuid';
+// @ts-ignore
 import confetti from 'canvas-confetti';
 import { ref } from 'vue';
 
