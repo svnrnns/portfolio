@@ -61,7 +61,7 @@ onMounted(() => {
         </span>
       </div>
       <div
-        class="w-full absolute top-full h-60 bg-gradient-to-b from-body to-body/0 opacity-0 transition-all duration-500"
+        class="w-full absolute top-full h-60 bg-gradient-to-b from-body to-body/0 opacity-0 transition-all pointer-events-none"
         :class="{ '!opacity-100': isTitleSticky }"
       ></div>
     </div>

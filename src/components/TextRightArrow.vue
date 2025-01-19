@@ -12,6 +12,8 @@ defineProps({
 <template>
   <div class="w-fit flex items-center gap-3">
     <h3 class="huge-text text-heading font-medium">{{ text }}</h3>
-    <IconArrowRightLong class="fill-heading h-4" />
+    <IconArrowRightLong
+      class="fill-heading h-4 group-hover:translate-x-2 transition-all duration-500"
+    />
   </div>
 </template>
