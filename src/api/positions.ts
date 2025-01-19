@@ -13,7 +13,7 @@ export const positions: PositionBuilder[] = [
     data: {
       title: 'Zeus by LLYC',
       position: 'Frontend Software Engineer',
-      from: new Date(2023, 4, 1),
+      from: new Date(2023, 2, 1),
     },
     icon: {
       bg: '#f93f55',

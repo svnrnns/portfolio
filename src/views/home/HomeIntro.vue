@@ -36,12 +36,6 @@ import CopyTextButton from '@/components/CopyTextIcon.vue';
       <div class="flex items-center gap-3">
         <a
           class="icon-btn bg-module"
-          href="https://www.twitter.com/svnrnns"
-        >
-          <IconTwitter class="size-4 sm:size-4.5 fill-heading" />
-        </a>
-        <a
-          class="icon-btn bg-module"
           href="https://www.linkedin.com/in/svnrnns/"
         >
           <IconLinkedin class="size-4 sm:size-4.5 fill-heading" />
